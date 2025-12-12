@@ -1,0 +1,23 @@
+# .github/workflows/deploy.yml
+
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4 # Updated to v4
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4 # Updated to latest version
+        with:
+          server: "77.37.62.161"
+          username: ${{ secrets.ftp_username }} # Ensure this name matches your secret's name exactly
+          password: ${{ secrets.ftp_password }} # Use quotes and ensure name matches
+          server-dir: /var/www/submission-judgement/
+          # protocol and port are usually not needed unless non-standard
