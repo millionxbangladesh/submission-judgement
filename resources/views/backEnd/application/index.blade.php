@@ -17,7 +17,7 @@
         <div class="col-md-12">
             @include('message')
             <div class="card">
-                <h5 class="card-header">Total Applications: ({{sprintf("%02d",$applications->total())}})</h5>
+                <h5 class="card-header">Total Applications test: ({{sprintf("%02d",$applications->total())}})</h5>
                 <form action="{{route('application.index')}}" method="GET" class="mx-2 mb-3">
                     <div class="row text-center g-3">
                         <div class="col-md-3 mb-2">
