@@ -1,0 +1,441 @@
+/* Color library ==================================================== */
+
+:root{
+     
+    --navy-700: #131144; /* Brand color*/
+  
+    --blue-500: #3D3DC2;
+    --blue-100: #EBEBFF;
+
+    --purple-100: #fef7ff;
+    --purple-500: #A321B9;
+    --purple-900: #26062c;
+    --purple-100: #FBE2FF;
+
+    --pink-500: #FF006A;
+    --pink-700: #cf0056;
+
+    --amber-100: #fff6e9;
+    --amber-500: #FFA116;
+    --amber-700: #e27100;
+
+    --dark-800: #545454;
+    --dark-900: #323232;
+    --dark-1000: #141414;
+
+
+}
+
+.text-pink-500{
+    color: var(--pink-500);
+}
+.text-purple-500{
+    color: var(--purple-500);
+}
+.text-dark-900{
+    color: var(--dark-900);
+}
+.text-blue-500{
+    color: var(--blue-500);
+}
+.text-amber-500{
+    color: var(--amber-500);
+}
+.text-navy-700{
+    color: var(--navy-700);
+}
+
+
+.bg-pink-500{
+    background-color: var(--pink-500);
+}
+.bg-navy-700{
+    background-color: var(--navy-700);
+}
+.bg-amber-100{
+    background-color: var(--amber-100);
+}
+.bg-amber-500{
+    background-color: var(--amber-500);
+}
+.bg-blue-500{
+    background-color: var(--blue-500);
+}
+.bg-purple-100{
+    background-color: var(--purple-100);
+}
+.bg-purple-500{
+    background-color: var(--purple-500);
+}
+.bg-purple-900{
+    background-color: var(--purple-900);
+}
+.bg-gradient-pink{
+    background-image: linear-gradient(45deg, var(--pink-500),#FF12E1);
+}
+.bg-gradient-blue{
+    background-image: linear-gradient(45deg, var(--blue-500), var(--purple-500));
+}
+.bg-gradient-amber{
+    background-image: linear-gradient(45deg, var(--amber-500), var(--amber-700));
+}
+.bg-gradient-navy{
+    background-image: linear-gradient(90deg,var(--navy-700),var(--purple-500));
+}
+
+/* BACKGROUND IMAGES CONTROL */
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* LINE CLAMPINGS */
+.line-single{
+    max-width: 99%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* @media screen and (max-width: 1199px){
+    .line-single-xl{
+        max-width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+} */
+@media screen and (min-width: 75rem){
+    .line-single-xl{
+        max-width: 99%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1lh;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .line-clamp-md-1{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        height: 1lh;
+    }
+    .line-clamp-2{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        height: 2lh;
+    }
+    .line-clamp-3{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        height: 3lh;
+    }
+    .line-clamp-4{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        height: 4lh;
+    }
+}
+@media screen and (min-width: 48rem){
+    .line-clamp-md-2{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        height: 2lh;
+    }
+    .line-clamp-md-3{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        height: 3lh;
+    }
+}
+@media screen and (min-width: 62rem){
+    .line-clamp-lg-2{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        height: 2lh;
+    }
+    .line-clamp-lg-3{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        height: 3lh;
+    }
+}
+
+@media screen and (min-width: 75rem){
+    .line-clamp-xl-2{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        height: 2lh;
+    }
+    .line-clamp-xl-3{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        height: 3lh;
+    }
+    .line-clamp-xl-4{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        height: 4lh;
+    }
+}
+
+/* BUTTONS ============================================================================================== */
+
+.btn-primary{
+    background-color: var(--pink-500);
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+}
+
+
+/* nasa button [blue] */
+.btn-nasa-blue{
+    color: white;
+    background-color: var(--blue-500);
+    padding: 8px 12px;
+    max-width: max-content;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    min-width: 5rem;
+    font-size: 12px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.btn-nasa-blue span{
+    position: relative;
+    z-index: 3;
+}
+
+@media screen and (min-width:1200px){
+    .btn-nasa-blue{
+        padding: 0.75rem 1rem;
+        min-width: 6.5rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.05rem;
+    }
+}
+
+.btn-nasa-blue::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--purple-500);
+    top: 100%;
+    left: 100%;
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+}
+.btn-nasa-blue:hover::before{
+    left:0;
+    top: 0;
+}
+
+/* nasa button [navy] */
+.btn-nasa-navy{
+    color: white;
+    background-color: var(--navy-700);
+    padding: 8px 12px;
+    /* max-width: max-content; */
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    min-width: 5rem;
+    font-size: 0.75rem;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.btn-nasa-navy span{
+    position: relative;
+    z-index: 3;
+}
+
+@media screen and (min-width:1200px){
+    .btn-nasa-navy{
+        padding: 0.75rem 1rem;
+        min-width: 6.5rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.05rem;
+    }
+}
+
+.btn-nasa-navy::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--pink-500);
+    top: 100%;
+    left: 100%;
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+}
+.btn-nasa-navy:hover::before{
+    left:0;
+    top: 0;
+}
+
+
+/* btn - cta */
+.btn-cta{
+    color: white;
+    background-color: var(--blue-500);
+    padding: 8px 12px;
+    max-width: max-content;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    min-width: 80px;
+    font-size: 11px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    animation: ctaButtonAnimation 1s ease-out infinite ;
+}
+
+@media screen and (min-width:1200px){
+    .btn-cta{
+        padding: 12px 16px;
+        min-width: 100px;
+        font-size: 0.875rem;
+        letter-spacing: 0.05rem;
+    }
+}
+@keyframes ctaButtonAnimation {
+    0%{
+        outline: 0 solid rgba(163, 33, 185, 1);
+    }
+    100%{
+        outline: 1rem solid rgba(163, 33, 185, 0);
+    }
+}
+.btn-login{
+    background-color: var(--pink-500);
+    padding: 8px 12px;
+    font-size: 11px;
+}
+@media screen and (min-width:1200px){
+    .btn-login{
+        padding: 12px 16px;
+        min-width: 100px;
+        font-size: 0.875rem;
+        letter-spacing: 0.05rem;
+    }
+}
+.btn-cta::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 35%;
+    background-color: #fff;
+    opacity: 0.25;
+    transform: skewX(15deg);
+    top: 0;
+    left: -4rem;
+    transition: 0.3s ease-in-out;
+}
+.btn-cta:hover::after{
+    left: 10rem;
+}
+
+/* ASPECT RATION */
+.aspect-square{
+    aspect-ratio: 1/1;
+}
+.aspect-rectangle{
+    aspect-ratio: 4/3;
+}
+.aspect-wide-rectangle{
+    aspect-ratio: 3/2;
+}
+.aspect-cover-rectangle{
+    aspect-ratio: 16/9;
+}
+.aspect-half-rectangle{
+    aspect-ratio: 2/1;
+}
+.aspect-cover-wide-rectangle{
+    aspect-ratio: 3/1;
+}
+.aspect-cover-extra-wide{
+    aspect-ratio: 6/1;
+}
+.aspect-rectangle-vertical{
+    aspect-ratio: 3/4;
+}
+.aspect-a4{
+    aspect-ratio: 1/1.37;
+}
+.aspect-portrait{
+    aspect-ratio: 1/1.25;
+}
+
+
+.fit-logo{
+    max-height: 100%;
+    max-width: 100%;
+}
+/* COMMON STYLING */
+.section-subtitle{
+    font-size: 1rem;
+}
+.section-title{
+    font-size: 1.25rem;
+}
+@media screen and (min-width:75rem){
+    .section-subtitle{
+        font-size: 1rem;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+}
+
+.mt-nav{
+    margin-top: 4.5rem;
+}
+.pt-nav{
+    padding-top: 4.5rem;
+}
+
+.z-10{
+    z-index: 999;
+}
