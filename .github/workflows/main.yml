@@ -1,23 +1,36 @@
 # .github/workflows/deploy.yml
 
+name: 🚀 Deploy Laravel to VPS
+
 on:
   push:
     branches:
       - main
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v4 # Updated to v4
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4 # Updated to latest version
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🚀 Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          server: "77.37.62.161"
-          username: ${{ secrets.ftp_username }} # Ensure this name matches your secret's name exactly
-          password: ${{ secrets.ftp_password }} # Use quotes and ensure name matches
-          server-dir: /var/www/submission-judgement/
-          # protocol and port are usually not needed unless non-standard
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            cd ${{ secrets.VPS_PATH }}
+            git pull origin main
+            composer install --no-dev --optimize-autoloader
+            php artisan migrate --force
+            php artisan config:clear
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+            npm install
+            npm run build
+
