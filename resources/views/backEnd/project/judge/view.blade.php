@@ -117,9 +117,9 @@
                             <thead class="border">
                             <tr>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Impact (1-10)</th>
-                                <th class="fw-bold fs-6 text-center text-capitalize">Creativity (1-10)</th>
-                                <th class="fw-bold fs-6 text-center text-capitalize">Validity (1-10)</th>
-                                <th class="fw-bold fs-6 text-center text-capitalize">Relevance (1-10)</th>
+                                <th class="fw-bold fs-6 text-center text-capitalize">Innovation (1-10)</th>
+                                <th class="fw-bold fs-6 text-center text-capitalize">Technical (1-10)</th>
+                                <th class="fw-bold fs-6 text-center text-capitalize">Scalability (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Presentation (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Confirm</th>
                             </tr>
@@ -179,77 +179,89 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <div class="accordion" id="rubricAccordion">
-                    <!-- Influence -->
+                    <!-- Innovation -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingInfluence">
                             <button class="accordion-button text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfluence" aria-expanded="true" aria-controls="collapseInfluence">
-                                Impact : How much influence (quality and quantity) can this project have?
+                                Innovation & Creativity
                             </button>
                         </h2>
                         <div id="collapseInfluence" class="accordion-collapse collapse show" aria-labelledby="headingInfluence" data-bs-parent="#rubricAccordion">
                             <div class="accordion-body bg-light border rounded">
-                                <ul class="list-unstyled mb-0 mt-2">
-                                    <li class="mb-2"><span class="badge bg-success">20 – Absolutely Wow</span><br>The project solves a major problem and has the potential to inspire and benefit a large, diverse population.</li>
-                                    <li class="mb-2"><span class="badge bg-info">10 – Unique Idea</span><br>The project addresses a significant issue with a unique approach. While similar concepts exist, this project impacts a broad group of people.</li>
-                                    <li class="mb-2"><span class="badge bg-warning text-dark">5 – Unique Implementation</span><br>The project tackles a known issue with a familiar concept but introduces a unique implementation. It impacts a smaller, more niche audience.</li>
-                                    <li><span class="badge bg-danger">1 – Public Domain</span><br>The project relies on well-known, common solutions and has minimal impact, benefiting only a small group.</li>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="mb-2">
+                                        <span class="badge bg-success">9–10</span>
+                                        Disruptive, breakthrough idea with strong originality and global scalability.
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="badge bg-info">7–8</span>
+                                        Strong novelty with clever AI integration and meaningful innovation.
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="badge bg-warning text-dark">4–6</span>
+                                        Moderate creativity using mostly standard AI approaches.
+                                    </li>
+                                    <li>
+                                        <span class="badge bg-danger">0–3</span>
+                                        Minimal originality; largely replicated or predictable idea.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Creativity -->
+                    <!-- Technical -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingCreativity">
                             <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCreativity" aria-expanded="false" aria-controls="collapseCreativity">
-                                Creativity : How creative or innovative is the approach?
+                                Technical Implementation
                             </button>
                         </h2>
                         <div id="collapseCreativity" class="accordion-collapse collapse" aria-labelledby="headingCreativity" data-bs-parent="#rubricAccordion">
                             <div class="accordion-body bg-light border rounded">
-                                <ul class="list-unstyled mb-0 mt-2">
-                                    <li class="mb-2"><span class="badge bg-success">20 – Absolutely Wow</span><br>The idea is groundbreaking, never before seen or imagined, showcasing exceptional creativity.</li>
-                                    <li class="mb-2"><span class="badge bg-info">10 – Unique Idea</span><br>The concept is creative and unique, but elements have never been seen before. The approach adds new dimensions to existing ideas.</li>
-                                    <li class="mb-2"><span class="badge bg-warning text-dark">5 – Unique Implementation</span><br>The idea exists in the public domain, but the execution is novel and showcases some creative elements.</li>
-                                    <li><span class="badge bg-danger">1 – Public Domain</span><br>The project needs to be more original and relies on widely available ideas without significant innovation.</li>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="mb-2"><span class="badge bg-success">9–10</span> Advanced architecture, optimized AI models, clean code, seamless UX.</li>
+                                    <li class="mb-2"><span class="badge bg-info">7–8</span> Solid engineering with thoughtful design and reliable execution.</li>
+                                    <li class="mb-2"><span class="badge bg-warning text-dark">4–6</span> Basic working solution with limited AI depth.</li>
+                                    <li><span class="badge bg-danger">0–3</span> Poor or incomplete technical implementation.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Validity -->
+                    <!-- Scalability -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingValidity">
                             <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseValidity" aria-expanded="false" aria-controls="collapseValidity">
-                                Validity : Is the solution scientifically valid and practical for real-world implementation?
+                                Scalability & Feasibility
                             </button>
                         </h2>
                         <div id="collapseValidity" class="accordion-collapse collapse" aria-labelledby="headingValidity" data-bs-parent="#rubricAccordion">
                             <div class="accordion-body bg-light border rounded">
-                                <ul class="list-unstyled mb-0 mt-2">
-                                    <li class="mb-2"><span class="badge bg-success">20 – Absolutely Wow</span><br>The idea is scientifically sound and has been validated through rigorous testing, demonstrating clear potential for real-world application.</li>
-                                    <li class="mb-2"><span class="badge bg-info">10 – Unique Idea</span><br>The idea is scientifically valid and has solid potential for real-world application, but it might need further refinement.</li>
-                                    <li class="mb-2"><span class="badge bg-warning text-dark">5 – Unique Implementation</span><br>The project has some scientific backing, but there are noticeable gaps in validation or real-world applicability.</li>
-                                    <li><span class="badge bg-danger">1 – Public Domain</span><br>The project lacks scientific rigor or has minimal real-world applicability.</li>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="mb-2"><span class="badge bg-success">9–10</span> Fully scalable, sustainable, and deployment-ready solution.</li>
+                                    <li class="mb-2"><span class="badge bg-info">7–8</span> Clear roadmap and technical readiness for scale.</li>
+                                    <li class="mb-2"><span class="badge bg-warning text-dark">4–6</span> Locally feasible with limited scaling plans.</li>
+                                    <li><span class="badge bg-danger">0–3</span> Prototype only with no scaling strategy.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Relevance -->
+                    <!-- Impact -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingRelevance">
                             <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRelevance" aria-expanded="false" aria-controls="collapseRelevance">
-                                Relevance : Is the project responsive to the challenge?
+                                Social & Economic Impact
                             </button>
                         </h2>
                         <div id="collapseRelevance" class="accordion-collapse collapse" aria-labelledby="headingRelevance" data-bs-parent="#rubricAccordion">
                             <div class="accordion-body bg-light border rounded">
-                                <ul class="list-unstyled mb-0 mt-2">
-                                    <li class="mb-2"><span class="badge bg-success">20 – Absolutely Wow</span><br>The project fully addresses the challenge and provides a technically feasible, user-friendly solution.</li>
-                                    <li class="mb-2"><span class="badge bg-info">10 – Unique Idea</span><br>The solution is relevant to the challenge but requires refinement for full implementation.</li>
-                                    <li class="mb-2"><span class="badge bg-warning text-dark">5 – Unique Implementation</span><br>The project partially addresses the challenge but has notable gaps in feasibility or usability.</li>
-                                    <li><span class="badge bg-danger">1 – Public Domain</span><br>The project is loosely related to the challenge and does not provide a complete or usable solution.</li>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="mb-2"><span class="badge bg-success">9–10</span> Transformational impact with measurable outcomes and inclusivity.</li>
+                                    <li class="mb-2"><span class="badge bg-info">7–8</span> Strong national relevance with clear benefits.</li>
+                                    <li class="mb-2"><span class="badge bg-warning text-dark">4–6</span> Localized or limited-scale impact.</li>
+                                    <li><span class="badge bg-danger">0–3</span> Weak or unclear social relevance.</li>
                                 </ul>
                             </div>
                         </div>
@@ -259,16 +271,16 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingPresentation">
                             <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePresentation" aria-expanded="false" aria-controls="collapsePresentation">
-                                Presentation : How well was the project communicated?
+                                Presentation & Storytelling
                             </button>
                         </h2>
                         <div id="collapsePresentation" class="accordion-collapse collapse" aria-labelledby="headingPresentation" data-bs-parent="#rubricAccordion">
                             <div class="accordion-body bg-light border rounded">
-                                <ul class="list-unstyled mb-0 mt-2">
-                                    <li class="mb-2"><span class="badge bg-success">20 – Absolutely Wow</span><br>The team effectively communicated their project, clearly telling the story of the problem, solution, and impact. The quality of the graphics, audio, and video is impeccable. The presentation was in clear English and easily understood.</li>
-                                    <li class="mb-2"><span class="badge bg-info">10 – Unique Idea</span><br>The presentation was clear, but some aspects of the project were not fully communicated or explained. The quality of the graphics, audio, and video is excellent. The presentation was in clear English and easily understood.</li>
-                                    <li class="mb-2"><span class="badge bg-warning text-dark">5 – Unique Implementation</span><br>The presentation was adequate, but it lacked clarity or depth in explaining the solution. The quality of the graphics, audio, and video is good but needs some polishing. The presentation language can be improved for clarity; there were some repetitions.</li>
-                                    <li><span class="badge bg-danger">1 – Public Domain</span><br>The project was poorly communicated, making it difficult to understand the problem and solution. The quality needs to be improved for the graphics, audio, and video. The presentation was not easily understood.</li>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="mb-2"><span class="badge bg-success">9–10</span> Inspiring, data-driven, and stakeholder-ready presentation.</li>
+                                    <li class="mb-2"><span class="badge bg-info">7–8</span> Clear narrative with strong visuals and structure.</li>
+                                    <li class="mb-2"><span class="badge bg-warning text-dark">4–6</span> Understandable but lacks polish or flow.</li>
+                                    <li><span class="badge bg-danger">0–3</span> Poor communication and unclear messaging.</li>
                                 </ul>
                             </div>
                         </div>

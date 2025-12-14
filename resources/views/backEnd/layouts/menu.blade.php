@@ -21,6 +21,7 @@
     </div>
     <div class="menu-inner-shadow"></div>
     <ul class="menu-inner py-1">
+        <x-tools.menu-header title="Millionx Bangladesh"/>
         @if(Auth::user()->role ===1)
             <!-- Applications -->
             <li class="menu-item {{request()->routeIs('application.index')?'active':''}}">
