@@ -106,17 +106,6 @@ class ResultController extends Controller
                     ];
 
                     $finalScore = array_sum($averages);
-                    $finalScore += (float) $team->team_work_score;
-                    $finalScore += (float) $team->user_experience_score;
-                    $finalScore += (float) $team->is_nasa_data_usage_score;
-                    $finalScore += (float) $team->is_challenge_category_score;
-                    $finalScore += (float) $team->id_project_link_score;
-                    $finalScore += (float) $team->is_nasa_global_team_url_score;
-
-                    // 5% bonus if female members
-                    if ($team->is_female_members == 'yes') {
-                        $finalScore += ($finalScore * 5) / 100;
-                    }
 
                     $updates[] = [
                         'id'          => $team->id,
