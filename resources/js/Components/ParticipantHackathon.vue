@@ -41,7 +41,7 @@ const submit = () => {
 
 <template>
     <form @submit.prevent="submit" class="dash-form p-2 p-md-4 mt-2 mt-md-4" >
-        <div class="fw-bold text-blue-500 fs-5">
+        <div class="fw-bold text-black fs-5">
             Final Submission
         </div>
         <hr>

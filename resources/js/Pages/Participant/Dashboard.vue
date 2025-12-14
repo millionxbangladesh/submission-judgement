@@ -92,7 +92,7 @@ const handleFileInput = (event) => {
                         <div class="top-bar text-white top-bar p-3 p-md-4">
                             <div class="row gy-2">
                                 <div class="col-12 col-md-6 fs-md-5">
-                                    <span class="fw-semibold"><i class="fa-solid fa-location-dot me-2"></i>Region:</span> {{ participantInfo.location }}, Bangladesh
+                                    <span class="fw-semibold"><i class="fa-solid fa-location-dot me-2"></i>Location:</span> {{ participantInfo.location }}, Bangladesh
                                 </div>
                                 <div class="col-12 col-md-6 fs-md-5">
                                     <span class="fw-semibold"><i class="fa-solid fa-users me-2"></i>Team Name:</span> {{ participantInfo.team_name }}
@@ -108,9 +108,9 @@ const handleFileInput = (event) => {
                     </div>
                 </div>
                 <div class="row">
-                    <!-- <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6">
                         <form @submit.prevent="submit" class="dash-form p-2 p-md-4">
-                            <div class="fw-bold text-pink-500 fs-5">
+                            <div class="fw-bold text-black fs-5">
                                 Team Information
                             </div>
                             <hr>
@@ -163,9 +163,9 @@ const handleFileInput = (event) => {
                                         <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{form.errors.image}}</span>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-12">
                                     <div class="mb-3">
-                                        <label for="location" class="form-label">Female team members in your team?<sup class="text-danger">*</sup></label>
+                                        <label for="location" class="form-label">University<sup class="text-danger">*</sup></label>
                                         <select class="form-select shadow-none" id="location" aria-label="Default select example" :class="{'is-invalid':form.errors.is_female_members}" v-model="form.is_female_members">
                                             <option value="no" :selected="'no' == is_female_members">No</option>
                                             <option value="yes">Yes</option>
@@ -173,18 +173,11 @@ const handleFileInput = (event) => {
                                         <span class="invalid-feedback"><i class="bi bi-exclamation-triangle">{{  form.errors.is_female_members }}</i></span>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="mb-3">
-                                        <label for="video_link" class="form-label">How Many Female Members?<sup class="text-danger">*</sup></label>
-                                        <input type="text" v-model="form.female_members" :class="{'is-invalid':form.errors.female_members}" id="video_link" class="form-control shadow-none" placeholder="Project Presentation Or Video Link">
-                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> {{ form.errors.female_members }}</span>
-                                    </div>
-                                </div>
                             </div>
                             <div class="row mt-2 mt-md-5 mb-2 mb-md-3">
                                 <div class="col-12" v-for="(member, index) in form.team_members" :key="index" :class="{'mt-3':index!==0}">
                                     <div class="d-flex justify-content-between">
-                                        <div class="fw-bold text-purple-500 team-member">
+                                        <div class="fw-bold text-black team-member">
                                             Team Member - (0{{ index + 1 }})
                                         </div>
                                         <div>
@@ -259,9 +252,9 @@ const handleFileInput = (event) => {
                                 </button>
                             </div>
                         </form>
-                    </div> -->
-                    <div class="col-12 col-md-12">
-                        <!-- <Project :appChallengeCategory="appChallengeCategory" :projectName ="props.project_name" :videolink="props.videolink" :description = "props.description" :categoryId="category_id" :nasaGlobalTeamUrl="props.nasa_global_team_url" :nasaDataUse="props.nasa_data_use" /> -->
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <Project :appChallengeCategory="appChallengeCategory" :projectName ="props.project_name" :videolink="props.videolink" :description = "props.description" :categoryId="category_id" :nasaGlobalTeamUrl="props.nasa_global_team_url" :nasaDataUse="props.nasa_data_use" />
                         <Hackathon :filelink="props.filelink" :videolink="props.videolink" :projectlink="props.project_link" />
                     </div>
                 </div>

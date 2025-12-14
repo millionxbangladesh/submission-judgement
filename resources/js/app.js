@@ -6,10 +6,9 @@ import {resolvePageComponent} from 'laravel-vite-plugin/inertia-helpers';
 import {ZiggyVue} from '../../vendor/tightenco/ziggy';
 import AOS from 'aos'
 
-// const appName = import.meta.env.VITE_APP_NAME || 'NSAC';
 
 createInertiaApp({
-    title: (title) => `${title} - NASA Space Apps Challenge ${new Date().getFullYear()}`,
+    title: (title) => `${title} - Millionx Bangladesh`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
     setup({el, App, props, plugin}) {
         return createApp({render: () => h(App, props)})

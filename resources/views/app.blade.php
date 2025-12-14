@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title inertia>{{ config('app.name', 'NSAC') }}</title>
-        <meta property="og:title" content="NASA Space Apps Challenge Bangladesh">
+        <title inertia>{{ config('app.name', 'Millionx Bangladesh') }}</title>
+        <meta property="og:title" content="Millionx Bangladesh">
         <meta name="description" content="Embark on an extraordinary journey with the NASA International Space Apps Challenge, where innovation meets collaboration, and boundaries are surpassed.">
         <meta property="og:description" content="Embark on an extraordinary journey with the NASA International Space Apps Challenge, where innovation meets collaboration, and boundaries are surpassed.">
         <meta property="keywords" content="nasa,nsac,apps, challenge, nasa challenge, nasa apps, nasa bangladesh">

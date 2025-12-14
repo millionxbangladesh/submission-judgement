@@ -17,7 +17,6 @@ class ParticipantController extends Controller
             'zones' => DB::table('zones')->get(),
             'teamMembers' => auth()->guard('participant')->user()->registration->teamMembers,
             'appChallengeCategory' => AppChallengeCategory::where('status', 'active')->select('id','title')->get(),
-            'teamMembers' => auth()->guard('participant')->user()->registration->teamMembers,
             'project_name' => auth()->guard('participant')->user()->registration->project_name,
             'videolink' => auth()->guard('participant')->user()->registration->videolink,
             'description' => auth()->guard('participant')->user()->registration->description,

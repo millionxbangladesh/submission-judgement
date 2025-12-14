@@ -46,7 +46,7 @@ const submit = () => {
 
 <template>
     <form @submit.prevent="submit" class="dash-form p-2 p-md-4">
-        <div class="fw-bold text-purple-500 fs-5">
+        <div class="fw-bold text-black fs-5">
             Project Information
         </div>
         <hr>
@@ -58,17 +58,9 @@ const submit = () => {
                     <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{ projectForm.errors.project_name }}</span>
                 </div>
             </div>
-            <!-- <div class="col-12 col-md-6">
-                <div class="mb-3">
-                    <label for="video_link" class="form-label">Project Video Link <sup class="text-danger">*</sup></label>
-                    <input type="text" v-model="projectForm.video_link" :class="{'is-invalid':projectForm.errors.video_link}" id="video_link" class="form-control shadow-none" placeholder="Project Presentation Or Video Link">
-                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> {{ projectForm.errors.video_link }}</span>
-                </div>
-            </div> -->
-
             <div class="col-12">
                 <div class="mb-3">
-                    <label for="location" class="form-label">What is your NASA Space Apps Challenge category from the 2025 site?<sup class="text-danger">*</sup></label>
+                    <label for="location" class="form-label">Competition Topic<sup class="text-danger">*</sup></label>
                     <select class="form-select shadow-none" id="location" aria-label="Default select example" :class="{'is-invalid':projectForm.errors.category_id}" v-model="projectForm.category_id">
                         <option value="">Select One</option>
                         <option v-for="category in appChallengeCategory" :key="category.id" :value="category.id" :selected="category.id === projectForm.category_id">{{ category.title }}</option>
@@ -78,23 +70,9 @@ const submit = () => {
             </div>
             <div class="col-12">
                 <div class="mb-3">
-                    <label for="video_link" class="form-label">Please share here the URL of the team you created on NASA's global website.<sup class="text-danger">*</sup></label>
-                    <input type="text" v-model="projectForm.nasa_global_team_url" :class="{'is-invalid':projectForm.errors.nasa_global_team_url}" id="video_link" class="form-control shadow-none" placeholder="https://www.spaceappschallenge.org/2025/find-a-team/team-voyagers/?tab=details">
-                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> {{ projectForm.errors.nasa_global_team_url }}</span>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="mb-3">
                     <label for="description" class="form-label">Project Description <sup class="text-danger">*</sup></label>
                     <textarea v-model="projectForm.description" :class="{'is-invalid':projectForm.errors.description}" rows="3" id="description" class="form-control shadow-none" placeholder="Write short description of your project"></textarea>
                     <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> {{ projectForm.errors.description }}</span>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="mb-3">
-                    <label for="video_link" class="form-label">Which NASA Data Source Are You Using?.<sup class="text-danger">*</sup></label>
-                    <input type="text" v-model="projectForm.nasa_data_use" :class="{'is-invalid':projectForm.errors.nasa_data_use}" id="video_link" class="form-control shadow-none" placeholder="Enter the NASA data source used">
-                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> {{ projectForm.errors.nasa_data_use }}</span>
                 </div>
             </div>
             <div class="text-center" v-if="new Date(hackathonTime.video240send_date) > new Date() || new Date(hackathonTime.projectlinkend_date) > new Date()">
