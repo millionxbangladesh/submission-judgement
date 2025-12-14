@@ -13,14 +13,14 @@ Route::get('/clear', function () {
     return 'Cache cleared';
 });
 
-Route::controller(FrontEndController::class)->group(function () {
-    route::get('/', 'index')->name('home');
-    route::get('/', 'registration')->name('registration');
-});
+// Route::controller(FrontEndController::class)->group(function () {
+//     route::get('/', 'index')->name('home');
+//     route::get('/', 'registration')->name('registration');
+// });
 Route::post('/registration-2025', \App\Http\Controllers\NewRegistrationController::class)->name('newRegistration.submit');
 
 // Participant Auth Routes
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('participant.login');
+Route::get('/', [AuthController::class, 'showLoginForm'])->name('participant.login');
 Route::get('/participant/logout', [AuthController::class, 'logout'])->name('participant.logout');
 Route::post('/participant/login', [AuthController::class, 'login'])->name('participant-login');
 Route::get('/participant/forgot-password', [AuthController::class, 'forgotPassword'])->name('participant.forgot-password');

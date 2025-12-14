@@ -10,7 +10,7 @@ import {computed} from "vue";
 const page = usePage();
 const participantInfo = computed(()=>page.props.authParticipantInfo);
 const hackathonTime = computed(()=>page.props.hackathonTime);
-const props = defineProps(['appChallengeCategory','zones','teamMembers','project_name','videolink','description','video30s','video240s','project_link','category_id','is_female_members','female_members','nasa_global_team_url','nasa_data_use']);
+const props = defineProps(['appChallengeCategory','zones','teamMembers','project_name','videolink','description','video30s','video240s','project_link','category_id','is_female_members','female_members','nasa_global_team_url','nasa_data_use','filelink']);
 const form = useForm({
     team_name: participantInfo.value ? participantInfo.value.team_name : '',
     team_member: participantInfo.value ? participantInfo.value.team_member :'',
@@ -108,7 +108,7 @@ const handleFileInput = (event) => {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <!-- <div class="col-12 col-md-6">
                         <form @submit.prevent="submit" class="dash-form p-2 p-md-4">
                             <div class="fw-bold text-pink-500 fs-5">
                                 Team Information
@@ -259,10 +259,10 @@ const handleFileInput = (event) => {
                                 </button>
                             </div>
                         </form>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <Project :appChallengeCategory="appChallengeCategory" :projectName ="props.project_name" :videolink="props.videolink" :description = "props.description" :categoryId="category_id" :nasaGlobalTeamUrl="props.nasa_global_team_url" :nasaDataUse="props.nasa_data_use" />
-                        <Hackathon :video30s="props.video30s" :video240s="props.video240s" :projectlink="props.project_link" />
+                    </div> -->
+                    <div class="col-12 col-md-12">
+                        <!-- <Project :appChallengeCategory="appChallengeCategory" :projectName ="props.project_name" :videolink="props.videolink" :description = "props.description" :categoryId="category_id" :nasaGlobalTeamUrl="props.nasa_global_team_url" :nasaDataUse="props.nasa_data_use" /> -->
+                        <Hackathon :filelink="props.filelink" :videolink="props.videolink" :projectlink="props.project_link" />
                     </div>
                 </div>
             </div>

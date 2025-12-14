@@ -18,24 +18,24 @@ const auth = computed(()=>page.props.authParticipant);
                 <span class="toggler-icon bottom-bar"></span>
             </button>
             <Link class="navbar-brand" href="/">
-                <!-- <img class="w-100"  alt=""> -->
+                <img class="w-100" src="/assets/img/logo.png"  alt="">
                 MillionX Bangladesh
             </Link>
-            <!-- <div class="d-flex justify-content-center align-items-center gap-2">
-                 Register button
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                 <!-- Register button -->
                 <div class="d-flex d-xl-none fixed-right">
-                    <Link v-if="auth === null" :href="route('registration')" class="btn-cta align-self-center my-3 my-xl-0 me-xl-3">Register</Link>
+                    <!-- <Link v-if="auth === null" :href="route('registration')" class="btn-cta align-self-center my-3 my-xl-0 me-xl-3">Register</Link> -->
                 </div>
                 <div class="d-flex d-xl-none gap-3">
                     <Link v-if="auth !== null" :href="route('participant.dashboard')"><i class="fa-solid fa-users text-purple-500"></i></Link>
                     <Link v-if="auth !== null" :href="route('participant.logout')"><i class="fa-solid fa-right-from-bracket text-purple-500"></i></Link>
                 </div>
-            </div> -->
+            </div>
 
 
             <!-- Menu Items -->
-            <!-- <div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-xl-auto">
+            <div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-xl-auto">
                     <li class="nav-item hover-underline d-flex align-items-center mx-xl-2">
                         <Link class="nav-link px-3 px-xl-0 px-xl-2" href="/">Home</Link>
                     </li>
@@ -75,7 +75,7 @@ const auth = computed(()=>page.props.authParticipant);
                     <li class="nav-item hover-underline d-flex align-items-center mx-xl-2">
                         <Link class="nav-link px-3 px-xl-0 px-xl-2" :href="route('contact')">Contact</Link>
                     </li>
-                </ul>
+                </ul> -->
                 <div v-if="auth === null" class="d-block d-xl-none my-auto">
                     <Link :href="route('participant.login')" class="btn-login align-self-center my-3 my-xl-0 me-xl-3 text-white ms-3">Login</Link>
                 </div>
@@ -85,21 +85,21 @@ const auth = computed(()=>page.props.authParticipant);
             </div>
 
             <div class="d-flex justify-content-center gap-2">
-                <div v-if="auth === null" class="d-none d-xl-flex">
+                <!-- <div v-if="auth === null" class="d-none d-xl-flex">
                     <Link :href="route('registration')" class="btn-cta align-self-center my-3 my-xl-auto me-xl-3">Register</Link>
                 </div>
                 <div v-if="auth === null" class="d-none d-xl-block my-auto">
                     <Link :href="route('participant.login')" class="btn-login align-self-center my-3 my-xl-0 me-xl-3 text-white"><i class="fa-solid fa-user me-2"></i>Login</Link>
-                </div>
+                </div> -->
 
-                <div v-if="auth !== null" class="justify-content-center team-name-container bg-purple-100 p-2">
-                    <Link :href="route('participant.dashboard')" class="mb-0 team-name text-purple-500 fw-semibold me-5"><i class="fa-solid fa-users me-2"></i>{{ auth }}</Link>
+                <div v-if="auth !== null" class="justify-content-center p-2">
+                    <Link :href="route('participant.dashboard')" class="mb-0 team-name fw-semibold me-5"><i class="fa-solid fa-users me-2"></i>{{ auth }}</Link>
                 </div>
 
                 <div v-if="auth !== null" class="d-none d-xl-block my-auto">
-                    <Link :href="route('participant.logout')" class="btn-login align-self-center my-3 my-xl-0 me-xl-3 text-white"> <i class="fa-solid fa-right-from-bracket me-2"></i> Logout</Link>
+                    <Link :href="route('participant.logout')" class="align-self-center my-3 my-xl-0 me-xl-3 text-black"> <i class="fa-solid fa-right-from-bracket me-2"></i> Logout</Link>
                 </div>
-            </div>-->
+            </div>
 
         </div>
     </nav>

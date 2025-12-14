@@ -17,7 +17,7 @@
         </style>
     @endpush
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-7">
         <div class="card">
             <div class="card-header rounded-top mb-4 border border-success border-end-0 border-start-0 text-center">
                 <h5 class="mb-0"><i class="bx bx-group"></i> Team Project Details</h5>
@@ -51,30 +51,30 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card w-75">
+    <div class="col-md-5">
+        <div class="card w-75 w-md-100 mx-auto">
             <div class="card-header rounded-top mb-4 border border-success border-end-0 border-start-0 text-center">
                 <h5 class="mb-0"> Hackathon Submission</h5>
             </div>
             <div class="card-body project-details">
-                {{--  <div class="mb-3 d-flex align-items-center">
-                    <span class="label"><i class="bx bx-video"></i> 30s Video:</span>
+                <div class="mb-3 d-flex align-items-center">
+                    <span class="label"><i class='bx bx-folder-open'></i>Google Drive:</span>
                     <span class="value ms-2">
-                        @if($project->video30s)
-                            <a href="{{ $project->video30s }}" target="_blank" class="text-decoration-none text-primary">
+                        @if($project->file_link)
+                            <a href="{{ $project->file_link }}" target="_blank" class="text-decoration-none text-primary">
                                 View Video
                             </a>
                         @else
                             <span class="text-muted">Not uploaded</span>
                         @endif
                     </span>
-                </div>  --}}
+                </div>
 
                 <div class="mb-3 d-flex align-items-center">
-                    <span class="label"><i class="bx bx-movie-play"></i> 240s Video:</span>
+                    <span class="label"><i class="bx bx-movie-play"></i> YouTube link:</span>
                     <span class="value ms-2">
-                        @if($project->video240s)
-                            <a href="{{ $project->video240s }}" target="_blank" class="text-decoration-none text-primary">
+                        @if($project->videolink)
+                            <a href="{{ $project->videolink }}" target="_blank" class="text-decoration-none text-primary">
                                 View Video
                             </a>
                         @else
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="d-flex align-items-center">
-                    <span class="label"><i class="bx bx-map"></i> Region:</span>
+                    <span class="label"><i class="bx bx-map"></i> Location:</span>
                     <span class="value ms-2">
                         {{ $project->zone?->title ?? 'No Zone Assigned' }}
                     </span>

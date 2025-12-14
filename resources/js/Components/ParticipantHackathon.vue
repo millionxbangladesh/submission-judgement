@@ -8,14 +8,14 @@ const page = usePage();
 const hackathonTime = computed(()=>page.props.hackathonTime);
 
 const props = defineProps({
-    video30s: { type: String },
-    video240s: { type: String },
+    filelink: { type: String },
+    videolink: { type: String },
     projectlink: { type: String }
 });
 
 const hackathonForm = useForm({
-    video30s:  props.video30s || '',
-    video240s:  props.video240s || '',
+    file_link:  props.filelink || '',
+    video_link:  props.videolink || '',
     project_link: props.projectlink || '',
 });
 
@@ -40,33 +40,32 @@ const submit = () => {
 </script>
 
 <template>
-    <!-- <form @submit.prevent="submit" class="dash-form p-2 p-md-4 mt-2 mt-md-4" v-if="new Date(hackathonTime.video30send_date) <= new Date() || new Date(hackathonTime.video240send_date) <= new Date() || new Date(hackathonTime.projectlinkend_date) <= new Date()"> -->
-    <form @submit.prevent="submit" class="dash-form p-2 p-md-4 mt-2 mt-md-4" v-if="new Date(hackathonTime.video30send_date) > new Date() || new Date(hackathonTime.video240send_date) > new Date() || new Date(hackathonTime.projectlinkend_date) > new Date()">
+    <form @submit.prevent="submit" class="dash-form p-2 p-md-4 mt-2 mt-md-4" >
         <div class="fw-bold text-blue-500 fs-5">
-            Hackathon Submission
+            Final Submission
         </div>
         <hr>
         <div class="row">
-            <!-- <div class="col-12 col-md-6">
-                <div class="mb-3">
-                    <label for="project_name" class="form-label mb-0">Kindly Upload Your 30s Video <sup class="text-danger">*</sup></label>
-                    <small class="small-counter d-inline-block text-pink-500">Submission End: {{ hackathonTime.video30send_date }}</small>
-                    <input type="text" id="project_name" v-model="hackathonForm.video30s" :class="{'is-invalid':hackathonForm.errors.video30s}" class="form-control shadow-none" placeholder="Kindly Upload Your 30s Video" :disabled="new Date(hackathonTime.video30send_date) <= new Date()">
-                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{ hackathonForm.errors.video30s }}</span>
-                </div>
-            </div> -->
             <div class="col-12">
                 <div class="mb-3">
-                    <label for="video_link" class="form-label mb-0">Kindly Upload Your 240s Video <sup class="text-danger">*</sup></label>
-                    <small class="small-counter d-inline-block text-pink-500">Submission End: {{ hackathonTime.video240send_date }}</small>
-                    <input type="text" id="video_link" v-model="hackathonForm.video240s" :class="{'is-invalid':hackathonForm.errors.video240s}" class="form-control shadow-none" placeholder="Kindly Upload Your 240s Video" :disabled="new Date(hackathonTime.video240send_date) <= new Date()">
-                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{ hackathonForm.errors.video240s }}</span>
+                    <label for="project_name" class="form-label mb-0">Kindly Upload Full Project via Google Drive Folder Link <sup class="text-danger">*</sup></label>
+                    <!-- <small class="small-counter d-inline-block text-pink-500">Submission End: {{ hackathonTime.video30send_date }}</small> -->
+                    <input type="text" id="project_name" v-model="hackathonForm.file_link" :class="{'is-invalid':hackathonForm.errors.file_link}" class="form-control shadow-none" placeholder="Kindly Upload Full Project via Google Drive Folder Link" :disabled="new Date(hackathonTime.video30send_date) <= new Date()">
+                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{ hackathonForm.errors.file_link }}</span>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="video_link" class="form-label mb-0">Kindly Upload the YouTube Video Link for the Demo <sup class="text-danger">*</sup></label>
+                    <!-- <small class="small-counter d-inline-block text-pink-500">Submission End: {{ hackathonTime.video240send_date }}</small> -->
+                    <input type="text" id="video_link" v-model="hackathonForm.video_link" :class="{'is-invalid':hackathonForm.errors.video_link}" class="form-control shadow-none" placeholder="Kindly Upload the YouTube Video Link for the Demo" :disabled="new Date(hackathonTime.video240send_date) <= new Date()">
+                    <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{ hackathonForm.errors.video_link }}</span>
                 </div>
             </div>
             <div class="col-12">
                 <div class="mb-3">
                     <label for="description" class="form-label mb-0 d-inline-block">Kindly Upload Project Source Code Link (Git/Drive) <sup class="text-danger">*</sup></label>
-                    <br><small class="small-counter d-inline-block text-pink-500">Submission End: {{ hackathonTime.projectlinkend_date }}</small>
+                    <!-- <br><small class="small-counter d-inline-block text-pink-500">Submission End: {{ hackathonTime.projectlinkend_date }}</small> -->
                     <input type="text" id="video_link" v-model="hackathonForm.project_link" :class="{'is-invalid':hackathonForm.errors.project_link}" class="form-control shadow-none" placeholder="Kindly Upload Project Source Code Link (Git/Drive)" :disabled="new Date(hackathonTime.projectlinkend_date) <= new Date()">
                     <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{ hackathonForm.errors.project_link }}</span>
                 </div>

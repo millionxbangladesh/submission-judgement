@@ -5,7 +5,7 @@
         <h1>Edit Room</h1>
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ route('room.index') }}">Room</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('room.index') }}">Location</a></li>
                 <li class="breadcrumb-item active">Edit</li>
             </ol>
         </nav>
@@ -13,7 +13,7 @@
 
     <div class="card">
         <div class="bg-secondary rounded-top mb-4">
-            <h4 class="text-center mt-3 fw-bold text-white text-capitalize">Edit Room</h4>
+            <h4 class="text-center mt-3 fw-bold text-white text-capitalize">Edit Location</h4>
         </div>
         <div class="card-body">
             <form class="row g-3" method="POST" action="{{ route('room.update') }}" enctype="multipart/form-data">

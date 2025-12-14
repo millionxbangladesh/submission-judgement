@@ -38,21 +38,21 @@ const handleLogin = async () => {
       class="d-flex justify-content-center align-items-center position-relative overflow-hidden login-form-container"
       style="padding-top: 4rem; height: 100vh;"
     >
-      <img src="../assets/images/Saturnx.png" class="saturn-img" alt="" />
+      <!-- <img src="../assets/images/Saturnx.png" class="saturn-img" alt="" />
       <img src="../assets/images/Jupiter.png" class="jupitar-img" alt="" />
-      <img src="../assets/images/world.png" class="world-img" alt="" />
+      <img src="../assets/images/world.png" class="world-img" alt="" /> -->
 
-      <div class="container">
+      <div class="container ">
         <div class="row">
           <div class="col-12 col-md-5 mx-auto">
             <form
               @submit.prevent="handleLogin"
-              class="d-flex flex-column p-3 p-md-5 student-login-form"
+              class="d-flex flex-column p-3 p-md-5 student-login-form bg-white"
             >
               <h1 class="text-amber-500 text-center mb-4">Login Form</h1>
 
               <div class="student-id-label position-relative mb-2 mb-md-4">
-                <label class="text-white form-label ps-3 fs-5 mb-2">Email</label>
+                <label class="text-black form-label ps-3 fs-5 mb-2">Email</label>
                 <input
                   type="email"
                   v-model="email"
@@ -63,7 +63,7 @@ const handleLogin = async () => {
               </div>
 
               <div class="student-password-label position-relative mb-2 mb-md-4">
-                <label class="text-white form-label ps-3 fs-5 mb-2">Password</label>
+                <label class="text-black form-label ps-3 fs-5 mb-2">Password</label>
                 <input
                   type="password"
                   v-model="password"
@@ -73,11 +73,11 @@ const handleLogin = async () => {
                 />
               </div>
                 <!-- Forgot Password link -->
-                <div class="text-end mb-3">
+                <!-- <div class="text-end mb-3">
                     <a :href="route('participant.password.request')" class="text-amber-400 hover:underline">
                         Forgot Password?
                     </a>
-                </div>
+                </div> -->
               <button
                 type="submit"
                 class="btn-nasa-blue w-100 d-block mx-auto"
@@ -97,7 +97,7 @@ const handleLogin = async () => {
 </template>
 <style scoped>
 .login-form-container{
-    background-image: linear-gradient(to right, #131144, #090320);
+    background-image: linear-gradient(to right, #dbdbe091, #e7e6eb1e);
 }
 .student-login-form{
     background-color: rgba(255,255,255,0.075);

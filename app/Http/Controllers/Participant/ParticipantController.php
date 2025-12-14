@@ -29,6 +29,7 @@ class ParticipantController extends Controller
             'female_members' => auth()->guard('participant')->user()->registration->female_members,
             'nasa_global_team_url' => auth()->guard('participant')->user()->registration->nasa_global_team_url,
             'nasa_data_use' => auth()->guard('participant')->user()->registration->nasa_data_use,
+            'filelink' => auth()->guard('participant')->user()->registration->file_link,
         ]);
     }
 
@@ -104,13 +105,13 @@ class ParticipantController extends Controller
         $registrationId = auth()->guard('participant')->user()->registration->id;
 
         $request->validate([
-            'video30s' => 'nullable|url|max:200',
-            'video240s'   => 'nullable|url|max:200',
+            'file_link' => 'nullable|url|max:200',
+            'videolink'   => 'nullable|url|max:200',
             'project_link'  => 'nullable|url|max:200',
         ]);
 
         $registerUser = Registration::findOrFail($registrationId);
-        $registerUser->fill($request->only(['video30s', 'video240s', 'project_link']));
+        $registerUser->fill($request->only(['file_link', 'video_link', 'project_link']));
 
         // set flags if not already set
         $registerUser->id_project_link_score = 1;

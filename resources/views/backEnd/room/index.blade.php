@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-breadcrumb>
-        <x-slot:section>Room</x-slot:section>
-        <x-slot:title>Manage Room</x-slot:title>
+        <x-slot:section>Location</x-slot:section>
+        <x-slot:title>Manage Location</x-slot:title>
     </x-breadcrumb>
     @push('style')
         <style>
@@ -28,10 +28,10 @@
     <div class="card pb-4">
         <div class="container">
             <div class="card-header d-flex" style="justify-content: space-between">
-                <h5>Total Room</h5>
+                <h5>Total Location</h5>
                 <div class="float-right d-flex">
                     <a class="btn btn-primary" href="{{ route('room.create') }}" type="button" >+
-                        Create A New Room
+                        Create A New Location
                     </a>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     <thead class="border">
                     <tr>
                         <th class="text-capitalize">SL.</th>
-                        <th class="text-capitalize">Room Number</th>
+                        <th class="text-capitalize">Location Number</th>
                         <th class="text-capitalize">Number of Volunteer</th>
                         <th class="text-capitalize">Number of Judge</th>
                         <th class="text-capitalize">Project</th>
@@ -60,12 +60,12 @@
                                     <a title="Edit Projects" href="{{ route('room.editProject', ['id' => $room->id]) }}" class="m-2" @if($room->projects->count() === 0) hidden @endif><i class="bx bx-pencil"></i></a>
                                 </td>
                                 <td>
-                                    <span @if($room->status === 'inactive') hidden @endif class="badge bg-success text-capitalize">Room Active</span>
-                                    <span @if($room->status === 'active') hidden @endif class="badge bg-danger text-capitalize">Room Inactive</span>
+                                    <span @if($room->status === 'inactive') hidden @endif class="badge bg-success text-capitalize">Location Active</span>
+                                    <span @if($room->status === 'active') hidden @endif class="badge bg-danger text-capitalize">Location Inactive</span>
                                 </td>
                                 <td>
-                                    <a title="Edit Room" href="{{ route('room.edit',[ 'id' => $room->id ]) }}" class="btn btn-primary btn-sm"><i class="bx bx-pencil"></i></a>
-                                    <a title="Delete Room" href="#" onclick="deleteRoom({{ $room->id }})" class="btn btn-danger btn-sm"><i class="bx bx-trash"></i></a>
+                                    <a title="Edit Location" href="{{ route('room.edit',[ 'id' => $room->id ]) }}" class="btn btn-primary btn-sm"><i class="bx bx-pencil"></i></a>
+                                    <a title="Delete Location" href="#" onclick="deleteRoom({{ $room->id }})" class="btn btn-danger btn-sm"><i class="bx bx-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach

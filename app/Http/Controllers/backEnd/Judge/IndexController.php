@@ -26,7 +26,7 @@ class IndexController extends Controller
 
     public function view(Request $request)
     {
-        $project =Registration::with(['zone:id,title','appChallengeCategory'])->where('id', $request->id)->select('id','registration_no','team_name','project_name','description','video30s','video240s','project_link','zone_id','category_id')->first();
+        $project =Registration::with(['zone:id,title','appChallengeCategory'])->where('id', $request->id)->select('id','registration_no','team_name','project_name','description','file_link','videolink','project_link','zone_id','category_id')->first();
          $mark = Mark::where('user_id', Auth::id())->where('registration_id', $request->id)->first();
         return view($this->room . '.view', compact('project','mark'));
     }
