@@ -37,9 +37,8 @@ function formatDate($date): string
     return date('d-m-Y',strtotime($date));
 }
 
-function participantCreate($email, $registrationId)
+function participantCreate($email,$password, $registrationId)
 {
-    $password = \Illuminate\Support\Str::random(8);
     \App\Models\Participant::create([
         'email' => $email,
         'password' => \Illuminate\Support\Facades\Hash::make($password),
@@ -86,7 +85,7 @@ function judgeOwnMarks($id)
 {
         $mark = \App\Models\Mark::where('user_id', \Illuminate\Support\Facades\Auth::id())->where('registration_id', $id)->first();
 
-    return $mark ? "Marks: " . ($mark->influence + $mark->creativity + $mark->validity + $mark->relevance + $mark->presentation) . " / 100" : null;
+    return $mark ? "Marks: " . ($mark->influence + $mark->creativity + $mark->validity + $mark->relevance + $mark->presentation) . " / 50" : null;
 }
 
 function getCatiInfo($id){

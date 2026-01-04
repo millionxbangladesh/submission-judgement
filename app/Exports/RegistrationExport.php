@@ -36,7 +36,8 @@ class RegistrationExport implements FromCollection, WithMapping, WithHeadings, W
     {
         return [
             'Registration No',
-            'Category',
+            'Competition Topic',
+            'Challenge Topic',
             'Project Name',
             'Presentation Link',
             'Description',
@@ -77,6 +78,7 @@ class RegistrationExport implements FromCollection, WithMapping, WithHeadings, W
         $data[] = [
             $row->registration_no,
             $row->appChallengeCategory?->title,
+            $row->subChallengeCategory?->title,
             $row->project_name,
             $row->videolink,
             $row->description,
@@ -85,7 +87,7 @@ class RegistrationExport implements FromCollection, WithMapping, WithHeadings, W
             $row->team_leader_name,
             $row->team_leader_email,
             $row->team_leader_mobile,
-            $row->zone->title,
+            $row->zone?->title ?? '',
             '',
             '',
             '',

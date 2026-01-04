@@ -17,7 +17,7 @@
         <div class="col-md-12">
             @include('message')
             <div class="card">
-                <h5 class="card-header">Total Applications test: ({{sprintf("%02d",$applications->total())}})</h5>
+                <h5 class="card-header">Total Applications: ({{sprintf("%02d",$applications->total())}})</h5>
                 <form action="{{route('application.index')}}" method="GET" class="mx-2 mb-3">
                     <div class="row text-center g-3">
                         <div class="col-md-3 mb-2">
@@ -50,7 +50,7 @@
                                 <option value="" disabled selected>Location</option>
                                 @foreach($zones as $zone)
                                     <option
-                                        value="{{$zone->id}}" {{request('location')==$zone->id?'selected':''}}>{{$zone->title}}</option>
+                                        value="{{$zone->code}}" {{request('location')==$zone->code?'selected':''}}>{{$zone->title}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -63,12 +63,23 @@
                                 @endfor
                             </select>
                         </div>
-                        <div class="col-md-6 mb-2">
+                        <div class="col-md-2 mb-2">
+                            <select name="status" id="status " class="form-control">
+                                <option value=""  selected>Select Status</option>
+                                    <option value="active" {{request('status')=='active'?'selected':''}}>Qualified</option>
+                                    <option value="deactive" {{request('status')=='deactive'?'selected':''}}>Unqualified</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-2">
                             <button type="submit" class="btn btn-primary px-3"><i class="bx bx-filter"></i>Filtering
                             </button>
 
                             &nbsp;<a href="{{route('application.index')}}" class="btn btn-warning px-3"><i
                                     class="bx bx-sync"></i>Reset</a>
+                            &nbsp;<a
+                                href="{{route('application.export')}}?date={{request('date')}}&category={{request('category')}}&project={{request('project')}}&team_name={{request('team_name')}}&mobile={{request('mobile')}}&location={{request('location')}}&year={{request('year')}}"
+                                class="btn btn-danger px-3"><i
+                                    class="bx bxs-spreadsheet"></i>Download</a>
                         </div>
                     </div>
                 </form>
@@ -76,24 +87,28 @@
                     <table class="table table-striped ">
                         <thead class="table-light">
                         <tr>
+                            {{--                            <th>S.L</th>--}}
                             <th>App. ID</th>
                             <th width="15%">Team Leader</th>
                             <th>Project Name</th>
                             <th>Team Name</th>
                             <th width="11%" class="text-center">Submit Date</th>
+                            <th class="text-center">Status</th>
                             <th width="16%">Actions</th>
                         </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                         @forelse($applications as $key=>$app)
                             @php
-                                $zone = $app->zone->title;
+                                $zone = $app->zone->title ?? 'N/A';
                             @endphp
                             <tr>
+                                {{--                                <td>{{sprintf("%02d",$key+$applications->firstItem())}}.</td>--}}
                                 <td class="text-center">
                                     <span class="badge bg-label-primary w-100">{{$app->registration_no}}</span><br>
                                     <span class="badge bg-label-info w-100 mt-2"><i style="font-size: 10px" class="bx bx-map-pin"></i> {{$zone}}</span>
 
+                                    {{--                                    <span class="text-danger">Session: {{substr($app->registration_no,5,4)}}</span>--}}
                                 </td>
                                 <td><strong>{{$app->team_leader_name}}</strong>
                                     <br>
@@ -103,17 +118,27 @@
 
                                 <td>
                                     {{$app->project_name}}
+                                    {{--                                    {{substr_replace($app->description, "...", 160)}}--}}
                                 </td>
                                 <td>
                                     {{$app->team_name}}
+{{--                                    {{ucwords(strtolower($app->appChallengeCategory->title))}}--}}
                                 </td>
                                 <td class="text-center">
                                        <span class="badge bg-label-dark text-wrap">
-                                           {{date('d-M-Y',strtotime($app->created_at))}}<br><br>
-                                           {{date('h:i a',strtotime($app->created_at))}}
+                                           {{date('d-M-Y',strtotime($app->updated_at))}}<br><br>
+                                           {{date('h:i a',strtotime($app->updated_at))}}
                                        </span>
                                 </td>
+                                <td>
+                                    <span class="badge bg-label-primary bx bx-data w-100"> Submitted</span> <br>
+                                     @if($app->status ==='active')
+                                        <span class="badge bg-label-success bx bxs-badge-check w-100 mt-2"> Qualified</span>
+                                    @elseif($app->status ==='deactive')
+                                        <span class="badge bg-label-danger bx bx-x-circle w-100 mt-2"> Unqualified</span>
+                                    @endif
 
+                                </td>
                                 <td>
                                     <a href="{{route('application.edit',$app->id)}}"
                                            class="btn btn-sm mb-1 btn-info btn-custom-size" title="Edit Application"><i
@@ -123,6 +148,12 @@
                                             class="bx bx-show"></i></a>
                                     &nbsp;<a href="{{route('application.delete',$app->id)}}" onclick="return confirm('Are you sure want to delete this?')" title="Delete" class="btn mb-1 btn-sm btn-danger btn-custom-size"><i
                                             class="bx bx-trash"></i></a>
+                                    &nbsp;
+                                    @if($app->status ==='active')
+                                        <a href="{{ route('application.statusUpdate', ['id' => $app->id, 'status' => 'deactive']) }}" class="btn btn-dark btn-sm btn-custom-size" title="Make Underqualified"><i class='bx bx-x-circle'></i> </a>
+                                    @elseif($app->status ==='deactive')
+                                        <a href="{{ route('application.statusUpdate', ['id' => $app->id, 'status' => 'active']) }}" class="btn btn-success btn-sm btn-custom-size" title="Make Qualified"><i class='bx bxs-badge-check'></i></a>
+                                    @endif
                                 </td>
                             </tr>
                         @empty

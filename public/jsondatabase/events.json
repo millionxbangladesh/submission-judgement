@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "event_name": "MillionX Bangladesh - AI & The Future of Bangladesh",
+    "event_slug": "millionx-bangladesh-ai-the-future-of-bangladesh",
+    "event_year": "2025",
+    "description": "<p><strong>Theme:</strong> “Creating a Million 10X AI Minds”</p><p><strong>Dates:</strong> January 16, 2026</p><p><strong>Venue:</strong> Daffodil Plaza, 4/2 Sobhanbagh, Dhaka</p><p><strong>Format:</strong> Hybrid (in-person + live streamed)</p><p><strong>Organizers:</strong> MillionX Bangladesh in partnership with Daffodil Group, BASIS, BASIS Students Forum, universities, and industry partners.</p><p></p><h2><strong>Event Purpose</strong></h2><p>The MillionX Bangladesh National AI Build-a-thon is a landmark platform to:</p><ul><li><p>Empower young innovators to build <strong>real, deployable AI solutions</strong>.</p></li><li><p>Highlight the <strong>Top 20 teams</strong> from a pipeline of 5,000+ participants.</p></li><li><p>Bridge universities, government, industry, and investors.</p></li><li><p>Select the <strong>Top 5 Young AI Founders</strong> for funding, incubation, and global growth.</p></li><li><p>Advance Bangladesh toward a <strong>10X AI Nation</strong> by 2030.</p></li></ul><hr><p></p>",
+    "announcement_date": "2025-12-01T00:00:00.000Z",
+    "status": "ongoing",
+    "is_current": true,
+    "config_json": {
+      "competition_name": "AI Build-a-thon",
+      "competition_tagline": "Million Minds for Bangladesh"
+    },
+    "created_at": "2025-11-30T18:49:06.607Z",
+    "updated_at": "2025-12-16T15:12:34.323Z",
+    "deleted_at": null,
+    "event_end": "2026-01-20T00:00:00.000Z",
+    "event_start": "2025-12-01T00:00:00.000Z",
+    "max_total_weight": "100",
+    "auto_score_criteria_6_11": false
+  },
+  {
+    "id": 2,
+    "event_name": "dummy event",
+    "event_slug": "dummy-event",
+    "event_year": "2025",
+    "description": "<p>asds</p>",
+    "announcement_date": "2025-12-01T00:00:00.000Z",
+    "status": "ongoing",
+    "is_current": false,
+    "config_json": {
+      "competition_name": "asds",
+      "competition_tagline": "asd"
+    },
+    "created_at": "2025-12-02T15:33:38.027Z",
+    "updated_at": "2025-12-02T15:37:33.433Z",
+    "deleted_at": "2025-12-02T15:37:33.432Z",
+    "event_end": "2025-12-31T00:00:00.000Z",
+    "event_start": "2025-11-03T00:00:00.000Z",
+    "max_total_weight": "100",
+    "auto_score_criteria_6_11": false
+  }
+]

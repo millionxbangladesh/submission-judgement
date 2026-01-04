@@ -58,7 +58,7 @@ trait CommonQueries
 
     public function getZones()
     {
-        return Zone::select('id', 'title')->get();
+        return Zone::select('id', 'title','code')->get();
     }
 
     public function getLatestChallenge()

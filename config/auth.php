@@ -44,10 +44,6 @@ return [
             'driver' => 'session',
             'provider' => 'participants',
         ],
-        'registration' => [
-            'driver' => 'session',
-            'provider' => 'registrations',
-        ],
     ],
 
 
@@ -77,10 +73,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Participant::class,
         ],
-        'registration' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Registration::class,
-        ],
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

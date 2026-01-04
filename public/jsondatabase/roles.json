@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "role_name": "participant",
+    "display_name": "Participant",
+    "description": "Team participant with access to team dashboard",
+    "is_active": true,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-11-30T18:36:56.707Z",
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "role_name": "user",
+    "display_name": "User",
+    "description": "General user access (volunteers, speakers, attendees)",
+    "is_active": true,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-11-30T18:36:56.707Z",
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "role_name": "super_admin",
+    "display_name": "Super Admin",
+    "description": "Full system access with all permissions",
+    "is_active": true,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-11-30T18:36:56.707Z",
+    "deleted_at": null
+  },
+  {
+    "id": 4,
+    "role_name": "system_judge",
+    "display_name": "System Judge",
+    "description": "Automated system role for auto-scoring (internal use only)",
+    "is_active": false,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-11-30T18:36:56.707Z",
+    "deleted_at": null
+  },
+  {
+    "id": 5,
+    "role_name": "judge",
+    "display_name": "Judge",
+    "description": "Can score teams and view submissions",
+    "is_active": true,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-11-30T18:36:56.707Z",
+    "deleted_at": null
+  },
+  {
+    "id": 6,
+    "role_name": "high_admin",
+    "display_name": "High Admin",
+    "description": "Administrative access to manage events and users",
+    "is_active": true,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 7,
+    "role_name": "volunteer",
+    "display_name": "Volunteer",
+    "description": "Event volunteer with view-only access to assigned teams",
+    "is_active": true,
+    "created_at": "2025-11-30T18:36:56.707Z",
+    "updated_at": "2025-11-30T18:36:56.707Z",
+    "deleted_at": null
+  },
+  {
+    "id": 8,
+    "role_name": "Journalist",
+    "display_name": "Journalist",
+    "description": "Writes news/articles",
+    "is_active": true,
+    "created_at": "2025-12-04T15:20:59.909Z",
+    "updated_at": "2025-12-04T15:20:59.909Z",
+    "deleted_at": null
+  }
+]

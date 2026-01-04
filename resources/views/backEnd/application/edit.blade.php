@@ -27,7 +27,7 @@
                                 <label for="category" class="form-label">Choose a Category</label>
                                 <select class="form-select shadow-none" name="category" id="category"
                                         aria-label="Default select example">
-                                    <option value="">Choose a Challenge</option>
+                                    <option value="">Competition Topic</option>
                                     @foreach($challengeCategories as $cat)
                                         <option
                                             value="{{$cat->id}}" {{$app->category_id == $cat->id?'selected':''}}>{{ucwords(strtolower($cat->title))}}</option>
@@ -37,27 +37,24 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-3">
+                                <label for="category" class="form-label">Choose a Category</label>
+                                <select class="form-select shadow-none" name="sub_category_id" id="category"
+                                        aria-label="Default select example">
+                                    <option value="">Challenge Topic</option>
+                                    @foreach($subChallengeCategories as $cat)
+                                        <option
+                                            value="{{$cat->id}}" {{$app->sub_category_id == $cat->id?'selected':''}}>{{ucwords(strtolower($cat->title))}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
                                 <label for="project_name" class="form-label">What is your Project Name? <sup
                                         class="text-danger">*</sup></label>
                                 <input type="text" id="project_name" name="project_name"
                                        value="{{old('project_name',$app->project_name)}}"
                                        class="form-control shadow-none" placeholder="Project name">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="mb-3"><label for="video_link" class="form-label">Project Presentation Or Video
-                                    Link <sup class="text-danger">*</sup></label>
-                                <input type="text" id="video_link" name="video_link"
-                                       value="{{old('video_link',$app->videolink)}}" class="form-control shadow-none"
-                                       placeholder="Project Presentation Or Video Link">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label for="nasa_link" class="form-label">Project Link of NASA Website</label>
-                                <input type="text" id="nasa_link" name="nasa_link"
-                                       value="{{old('nasa_link',$app->nasa_link)}}" class="form-control shadow-none"
-                                       placeholder="Project Link of NASA Website">
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -69,23 +66,39 @@
                     </div>
                 </div>
                 <div class="form-block mt-3">
-                    <div class="form-title"><h5>Hackathon Submission Information</h5></div>
+                    <div class="form-title d-flex justify-content-between">
+                        <h5>Submission</h5>
+                        @if(isset($app->submitDate))
+                            <span class="badge bg-success text-white text-wrap">
+                                Submission Time<br><br>
+                                {{date('d-M-Y',strtotime($app->submitDate))}}
+                                {{date('h:i a',strtotime($app->submitDate))}}
+                            </span>
+                        @endif
+                    </div>
                     <hr>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="mb-3">
-                                <label for="video240s" class="form-label">240s Video <sup
+                                <label for="file_link" class="form-label">Project via Google Drive Folder Link <sup
                                         class="text-danger">*</sup></label>
-                                <input type="text" id="video240s" name="video240s"
-                                       value="{{old('video240s',$app->video240s)}}"
-                                       class="form-control shadow-none" placeholder="Project name">
+                                <input type="text" id="file_link" name="file_link"
+                                       value="{{old('file_link',$app->file_link)}}"
+                                       class="form-control shadow-none" placeholder=" Project via Google Drive Folder Link">
                             </div>
                         </div>
                         <div class="col-lg-6">
+                            <div class="mb-3"><label for="videolink" class="form-label">YouTube Video Link for the Demo <sup class="text-danger">*</sup></label>
+                                <input type="text" id="videolink" name="videolink"
+                                       value="{{old('videolink',$app->videolink)}}" class="form-control shadow-none"
+                                       placeholder="Project Presentation Or Video Link">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
                             <div class="mb-3"><label for="project_link" class="form-label">Project Source Code Link (Git/Drive) <sup class="text-danger">*</sup></label>
                                 <input type="text" id="project_link" name="project_link"
                                        value="{{old('project_link',$app->project_link)}}" class="form-control shadow-none"
-                                       placeholder="Project Presentation Or Video Link">
+                                       placeholder="Project Source Code Link (Git/Drive)">
                             </div>
                         </div>
                     </div>
@@ -145,8 +158,34 @@
                                     <option value="">Select One</option>
                                     @foreach($zones as $zone)
                                         <option
-                                            value="{{$zone->id}}" {{$app->zone_id === $zone->id?'selected':''}}>{{$zone->title}}</option>
+                                            value="{{$zone->code}}" {{$app->zone_id === $zone->code?'selected':''}}>{{$zone->title}}</option>
                                     @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="university_id" class="form-label">University<sup
+                                        class="text-danger">*</sup></label>
+                                <select class="form-select shadow-none" name="university_id" id="university_id"
+                                        aria-label="Default select example">
+                                    <option value="">Select One</option>
+                                    @foreach($universities as $u)
+                                        <option
+                                            value="{{$u->id}}" {{$app->university_id === $u->id?'selected':''}}>{{$u->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="team_type" class="form-label">Team Type<sup
+                                        class="text-danger">*</sup></label>
+                                <select class="form-select shadow-none" name="team_type" id="team_type"
+                                        aria-label="Default select example">
+                                    <option value="">Select One</option>
+                                    <option value="team" @if($app->team_type == 'team') selected @endif>Team</option>
+                                    <option value="individual" @if($app->team_type == 'individual') selected @endif>Individual</option>
                                 </select>
                             </div>
                         </div>
@@ -200,82 +239,7 @@
                     </div>
             @endforeach
         </div>
-        <div class="form-container">
-            <div class="form-block card mt-3">
-                <div class="card-body">
-                <div class="team-title d-flex justify-content-between">
-                    <h5>Team Points</h5>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="mb-3">
-                            <label for="team_work_score" class="form-label">Teamwork Points<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="text" name="team_work_score" id="team_work_score"
-                                    value="{{old('team_work_score',$app->team_work_score)}}" class="form-control shadow-none"
-                                    placeholder="Ex: 1...">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-3">
-                            <label for="user_experience_score" class="form-label">User Experience Points<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="text" name="user_experience_score" id="user_experience_score"
-                                    value="{{old('user_experience_score',$app->user_experience_score)}}" class="form-control shadow-none"
-                                    placeholder="Ex: 1...">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-3">
-                            <label for="is_nasa_data_usage_score" class="form-label">NASA Data usage Points<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="text" name="is_nasa_data_usage_score" id="is_nasa_data_usage_score"
-                                    value="{{old('is_nasa_data_usage_score',$app->is_nasa_data_usage_score)}}"
-                                    class="form-control shadow-none" placeholder="Ex: 1...">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-3">
-                            <label for="teamwork" class="form-label">Challenge Category Points<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="text" name="is_challenge_category_score" id="is_challenge_category_score"
-                                    value="{{old('is_challenge_category_score',$app->is_challenge_category_score)}}" class="form-control shadow-none"
-                                    placeholder="Ex: 1...">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-3">
-                            <label for="id_project_link_score" class="form-label">Google Drive/Canva/Github access Points<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="text" name="id_project_link_score" id="id_project_link_score"
-                                    value="{{old('id_project_link_score',$app->id_project_link_score)}}" class="form-control shadow-none"
-                                    placeholder="Ex: 1...">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-3">
-                            <label for="is_nasa_global_team_url_score" class="form-label">Project page Points<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="text" name="is_nasa_global_team_url_score" id="is_nasa_global_team_url_score"
-                                    value="{{old('is_nasa_global_team_url_score',$app->is_nasa_global_team_url_score)}}"
-                                    class="form-control shadow-none" placeholder="Ex: 1...">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="mb-3">
-                            <label for="is_female_members" class="form-label">Women Participation Bonus Points 5%<sup
-                                    class="text-danger">*</sup></label>
-                            <select name="is_female_members" id="is_female_members"
-                                class="form-control shadow-none">
-                                <option value="no" {{ old('is_nasa_global_team_url_score', $app->is_female_members) == 'no' ? 'selected' : '' }}>No</option>
-                                <option value="yes" {{ old('is_nasa_global_team_url_score', $app->is_female_members) == 'yes' ? 'selected' : '' }}>Yes</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+
         <div class="mt-3">
             <button type="button" class="btn btn-success btn-sm float-end add-member-btn"><i
                     class="fa fa-user-plus"></i> Add Member
@@ -304,7 +268,7 @@
 
                 // Function to add a new member form block
                 function addMemberForm() {
-                    if (memberCount >= 6) {
+                    if (memberCount >= 7) {
                         return; // Limit reached, exit function
                     }
 

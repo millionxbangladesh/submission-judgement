@@ -1,9 +1,10 @@
 /* Color library ==================================================== */
 
 :root{
-     
-    --navy-700: #131144; /* Brand color*/
-  
+
+    --navy-700: #131144;
+    --green-500: #4D9A34; /* Brand color*/
+
     --blue-500: #3D3DC2;
     --blue-100: #EBEBFF;
 
@@ -11,8 +12,8 @@
     --purple-500: #A321B9;
     --purple-900: #26062c;
     --purple-100: #FBE2FF;
-
-    --pink-500: #FF006A;
+    --green-100: #4e9a3498;
+    --pink-500: #f10404a8;
     --pink-700: #cf0056;
 
     --amber-100: #fff6e9;
@@ -28,6 +29,9 @@
 
 .text-pink-500{
     color: var(--pink-500);
+}
+.text-green-500{
+    color: var(--green-500);
 }
 .text-purple-500{
     color: var(--purple-500);
@@ -48,6 +52,9 @@
 
 .bg-pink-500{
     background-color: var(--pink-500);
+}
+.bg-green-500{
+    background-color: var(--green-500);
 }
 .bg-navy-700{
     background-color: var(--navy-700);
@@ -82,7 +89,12 @@
 .bg-gradient-navy{
     background-image: linear-gradient(90deg,var(--navy-700),var(--purple-500));
 }
-
+.bg-green-100{
+    background-color: var(--green-100);
+}
+.broder-green-500{
+    border-color: var(--green-500);
+}
 /* BACKGROUND IMAGES CONTROL */
 .bg-cover{
     background-size: cover;
@@ -226,7 +238,7 @@
 /* nasa button [blue] */
 .btn-nasa-blue{
     color: white;
-    background-color: var(--blue-500);
+    background-color: #4f46e5;
     padding: 8px 12px;
     max-width: max-content;
     display: inline-block;
@@ -237,6 +249,8 @@
     transition: 0.3s;
     position: relative;
     overflow: hidden;
+    border: none;
+    border-radius: 8px;
 }
 .btn-nasa-blue span{
     position: relative;
@@ -257,7 +271,7 @@
     content: '';
     height: 100%;
     width: 100%;
-    background-color: var(--purple-500);
+    background-color: #453eca;
     top: 100%;
     left: 100%;
     transition: 0.3s ease-in-out;
@@ -351,6 +365,7 @@
     background-color: var(--pink-500);
     padding: 8px 12px;
     font-size: 11px;
+    border-radius: 8px;
 }
 @media screen and (min-width:1200px){
     .btn-login{

@@ -1,10 +1,19 @@
 <?php
 
-
+use App\Http\Controllers\backEnd\AboutController;
 use App\Http\Controllers\backEnd\ApplicationController;
 use App\Http\Controllers\backEnd\DashboardController;
-
+use App\Http\Controllers\backEnd\FAQController;
+use App\Http\Controllers\backEnd\ImageAlbumController;
+use App\Http\Controllers\backEnd\JudgeController;
+use App\Http\Controllers\backEnd\MentorController;
+use App\Http\Controllers\backEnd\NewsController;
+use App\Http\Controllers\backEnd\OrganizerController;
+use App\Http\Controllers\backEnd\ProgramScheduleController;
+use App\Http\Controllers\backEnd\ResourceController;
 use App\Http\Controllers\backEnd\SiteConfigController;
+use App\Http\Controllers\backEnd\PartnerController;
+use App\Http\Controllers\backEnd\SponsorController;
 use App\Http\Controllers\backEnd\UserController;
 use App\Http\Controllers\backEnd\RoomController;
 use App\Http\Controllers\backEnd\ResultController;
@@ -14,12 +23,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function () {
-    Route::get('/', [ApplicationController::class, 'index'])->name('dashboard');
     //Profile Routes
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::get('/', [ApplicationController::class, 'index'])->name('dashboard');
     Route::get('applications', [ApplicationController::class, 'index'])->name('application.index');
     Route::get('/application/{id}/show', [ApplicationController::class, 'show'])->name('application.show');
     Route::get('/application/{id}/edit', [ApplicationController::class, 'edit'])->name('application.edit');
@@ -31,20 +40,14 @@ Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function () {
     Route::get('/check/availability/{id}', [ApplicationController::class, 'checkAvailability'])->name('check.availability');
     Route::post('/make/winner', [ApplicationController::class, 'makeWinner'])->name('make.winner');
     Route::get('/make/global-winner/{id}', [ApplicationController::class, 'globalWinner'])->name('make.global-winner');
+    Route::get('/application-status-update', [ApplicationController::class, 'statusUpdate'])->name('application.statusUpdate');
 
     //site configuration routes
     Route::get('/get-config', [SiteConfigController::class, 'index'])->name('get.config');
     Route::match(['GET', 'POST'], '/site/configuration', [SiteConfigController::class, 'config'])->name('site.config');
     Route::get('/summary/year', [SiteConfigController::class, 'summaryYear'])->name('summary.year');
 
-
-
-    //summary
-    Route::get('/get/category-summary', [DashboardController::class, 'getCategorySummary'])->name('get.category-summary');
-    Route::get('/get/year-summary', [DashboardController::class, 'getYearSummary'])->name('get.year-summary');
-    Route::get('/get/location-summary', [DashboardController::class, 'getLocationSummary'])->name('get.location-summary');
-
-    //Users
+    //CRUD routes
     Route::resource('users', UserController::class);
 
     Route::controller(RoomController::class)->prefix('room')->name('room.')->group(function () {

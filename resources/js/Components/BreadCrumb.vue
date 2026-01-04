@@ -22,7 +22,7 @@ defineProps({
                             <li>
                                 <Link href="/" class="text-white">Home</Link>
                             </li>
-                            <li><Link :href="route(routeLink)" class="text-pink-500"><i class="fa-solid fa-chevron-right me-2"></i>{{ title }}</Link></li>
+                            <li><Link :href="route(routeLink)" class=""><i class="fa-solid fa-chevron-right me-2"></i>{{ title }}</Link></li>
                         </ul>
                     </div>
                 </div>

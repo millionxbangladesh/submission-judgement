@@ -122,7 +122,7 @@ class RoomController extends Controller
     public function createProject(Request $request)
     {
         $AppChallengeInfo = AppChallengeInfo::wherestatus('active')->select('session')->first();
-        $projects = Registration::where('session', $AppChallengeInfo->session)->whereDoesntHave('projectRooms')->select('id','team_name','project_name')->get();
+        $projects = Registration::where('status', 'active')->whereDoesntHave('projectRooms')->select('id','team_name','project_name')->get();
         $room = Room::where('id', $request->id)->select('id','name')->first();
         return view($this->room . '.project.create', compact('projects','room'));
     }
@@ -155,7 +155,7 @@ class RoomController extends Controller
 
         $room_id = $room->id;
 
-        $registrations = Registration::where('session', $AppChallengeInfo->session)
+        $registrations = Registration::where('status', 'active')
             ->where(function($query) use ($room_id) {
                 $query->whereDoesntHave('projectRooms') // not assigned to any room
                     ->orWhereHas('projectRooms', function($q) use ($room_id) {

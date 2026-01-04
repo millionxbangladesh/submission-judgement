@@ -15,35 +15,28 @@ class NewRegistrationController extends Controller
      */
     public function __invoke(NewApplicationRequest $request)
     {
-        $challengeId = $request->challenge_id;
-        $lastRegistration = Registration::where('app_challenge_id', $challengeId) ->selectRaw('MAX(CAST(reg_id AS UNSIGNED)) as max_id')
+        $lastRegistration = Registration::where('app_challenge_id', 1) ->selectRaw('MAX(CAST(reg_id AS UNSIGNED)) as max_id')
         ->value('max_id');
         $latestNo = $lastRegistration ? $lastRegistration + 1 : 1;
         $idGenerate = sprintf('%04d', $latestNo);
         $year = date('Y');
-        $regNo = "NASA-{$year}-{$idGenerate}";
+        $regNo = "MillionX-{$year}-{$idGenerate}";
 
         $registrations = array_merge($request->except('team_members'), [
             'registration_no' => $regNo,
             'team_member' => count($request->team_members),
             'reg_id' => $idGenerate,
             'zone_id' => $request->location,
-            'app_challenge_id' => $challengeId,
-            'videolink' => $request->video_link,
+            'app_challenge_id' => 1,
             'session' => $year,
-            'team_work_score' => 5,
-            'user_experience_score' => 5,
         ]);
 
-        if ($request->hasFile('image')) {
-            $image = "{$idGenerate}_team_group_image." . $request->image->getClientOriginalExtension();
-            $request->image->move(public_path('uploads/group/'), $image);
-            $registrations['image'] = $image;
-        }
         $resData = Registration::create($registrations);
-        $loginInfo = participantCreate($request->team_leader_email, $resData->id);
-        $resData->teamMembers()->createMany($request->team_members);
-        $this->sendConfirmationMail($request->team_leader_email, $request->team_leader_name, $request->team_name, $regNo,$loginInfo->password);
+        participantCreate($request->team_leader_email,$request->password, $resData->id);
+        if($request->team_type === "team"){
+            $resData->teamMembers()->createMany($request->team_members);
+        }
+        // $this->sendConfirmationMail($request->team_leader_email, $request->team_leader_name, $request->team_name, $regNo,$loginInfo->password);
 
         return to_route('registration')->with('app_id', $regNo);
     }

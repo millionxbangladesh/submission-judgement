@@ -7,17 +7,17 @@
         <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span> Category:  <strong>{{ucwords(strtolower($app->appChallengeCategory?->title))}}</strong></span>
+                    <span> Competition Topic:  <strong>{{ucwords(strtolower($app->appChallengeCategory?->title))}}</strong></span>
+                    <span> Challenge Topic:  <strong>{{ucwords(strtolower($app->subChallengeCategory?->title))}}</strong></span>
                     <span>Team Name:  <strong>{{$app->team_name}}</strong></span>
                 </li>
                 <li class="list-group-item align-items-center">
                     <strong>Short description of project:</strong> <span  style="text-align: justify">{!! nl2br($app->description) !!}</span>
                     <br>
                     <br>
-                    <strong>Project Presentation Or Video Link: <a href="{{$app->videolink}}"
-                                                                   target="_blank"> {{$app->videolink}}</a></strong>
-
-                    <p><strong>Application ID: </strong> {{$app->registration_no}}</p>
+                    <strong>Project Presentation Or Video Link: <a href="{{$app->videolink}}" target="_blank"> {{$app->videolink}}</a></strong><br>
+                    <strong>Google Drive Folder Link: <a href="{{$app->file_link}}" target="_blank"> {{$app->file_link}}</a></strong><br>
+                    <strong>Project Source Code Link (Git/Drive): <a href="{{$app->project_link}}" target="_blank"> {{$app->project_link}}</a></strong>
                 </li>
             </ul>
             <hr>
@@ -25,6 +25,10 @@
                 <div class="col-md-5">
                     <h6 class="fw-bold">Team Information:</h6>
                     <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Application ID:
+                            <span> {{$app->registration_no}}</span>
+                        </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Team Leader Name:
                             <span>{{$app->team_leader_name}}</span>
@@ -44,6 +48,14 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Location:
                             <span>{{$app->zone?->title}}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            University:
+                            <span>{{$app->university?->name}}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Team Type:
+                            <span class="text-capitalize">{{$app->team_type}}</span>
                         </li>
                     </ul>
                 </div>

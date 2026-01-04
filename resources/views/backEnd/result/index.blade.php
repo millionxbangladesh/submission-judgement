@@ -33,7 +33,7 @@
                             <select name="location" id="location" class="form-select">
                                 <option value="" disabled {{ request('location') ? '' : 'selected' }}>Select Region</option>
                                 @foreach($zones as $zone)
-                                    <option value="{{ $zone->id }}" {{ request('location') == $zone->id ? 'selected' : '' }}>
+                                    <option value="{{ $zone->code }}" {{ request('location') == $zone->code ? 'selected' : '' }}>
                                         {{ $zone->title }}
                                     </option>
                                 @endforeach
@@ -52,9 +52,9 @@
                             <a href="{{ route('result.calculateFinalScore') }}" class="btn btn-secondary">
                                 <i class="bx bx-calculator"></i> Final Score Evaluation
                             </a>
-                            <a href="{{ route('result.excelExport', request()->all()) }}" title='Downlode The Report'  class="btn btn-warning ms-2">
+                            {{--  <a href="{{ route('result.excelExport', request()->all()) }}" title='Downlode The Report'  class="btn btn-warning ms-2">
                                 <i class="bx bx-file"></i>
-                            </a>
+                            </a>  --}}
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <table class="table table-striped">
                     <thead class="border">
                     <tr>
-                        <th class="text-capitalize">SL. && Region</th>
+                        <th class="text-center text-capitalize">SL. && Region</th>
                         <th class="text-capitalize">Team Name</th>
                         <th class="text-capitalize">Team Leader</th>
                         <th class="text-capitalize">Project Name</th>
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="card-body">
-                {{$teams->links()}}
+                {{$teams->appends(request()->query())->links()}}
             </div>
         </div>
     </div>

@@ -1,0 +1,2189 @@
+[
+  {
+    "id": 18,
+    "role_id": 3,
+    "permission_id": 1,
+    "reason": "Super Admin has full system access",
+    "created_at": "2025-11-30T18:38:53.608Z",
+    "updated_at": "2025-11-30T18:38:53.608Z",
+    "deleted_at": null
+  },
+  {
+    "id": 145,
+    "role_id": 5,
+    "permission_id": 33,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 147,
+    "role_id": 5,
+    "permission_id": 21,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 149,
+    "role_id": 5,
+    "permission_id": 25,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 151,
+    "role_id": 5,
+    "permission_id": 37,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 153,
+    "role_id": 5,
+    "permission_id": 48,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 154,
+    "role_id": 5,
+    "permission_id": 44,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 155,
+    "role_id": 5,
+    "permission_id": 57,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 156,
+    "role_id": 5,
+    "permission_id": 56,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 157,
+    "role_id": 5,
+    "permission_id": 53,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 158,
+    "role_id": 5,
+    "permission_id": 58,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 159,
+    "role_id": 5,
+    "permission_id": 52,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 160,
+    "role_id": 5,
+    "permission_id": 65,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 161,
+    "role_id": 5,
+    "permission_id": 133,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 162,
+    "role_id": 1,
+    "permission_id": 25,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 163,
+    "role_id": 5,
+    "permission_id": 129,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 164,
+    "role_id": 5,
+    "permission_id": 125,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 165,
+    "role_id": 5,
+    "permission_id": 147,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 166,
+    "role_id": 5,
+    "permission_id": 121,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 167,
+    "role_id": 5,
+    "permission_id": 60,
+    "reason": "Judge can score teams and view submissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 168,
+    "role_id": 1,
+    "permission_id": 21,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 169,
+    "role_id": 1,
+    "permission_id": 13,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 170,
+    "role_id": 1,
+    "permission_id": 15,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 171,
+    "role_id": 1,
+    "permission_id": 26,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 172,
+    "role_id": 1,
+    "permission_id": 30,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 173,
+    "role_id": 1,
+    "permission_id": 27,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 174,
+    "role_id": 1,
+    "permission_id": 33,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 175,
+    "role_id": 1,
+    "permission_id": 29,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 176,
+    "role_id": 1,
+    "permission_id": 32,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 177,
+    "role_id": 1,
+    "permission_id": 39,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 178,
+    "role_id": 1,
+    "permission_id": 31,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 179,
+    "role_id": 1,
+    "permission_id": 106,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 180,
+    "role_id": 1,
+    "permission_id": 38,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 181,
+    "role_id": 1,
+    "permission_id": 37,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 182,
+    "role_id": 1,
+    "permission_id": 104,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 183,
+    "role_id": 1,
+    "permission_id": 140,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 184,
+    "role_id": 1,
+    "permission_id": 42,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 185,
+    "role_id": 1,
+    "permission_id": 41,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 186,
+    "role_id": 1,
+    "permission_id": 81,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 187,
+    "role_id": 1,
+    "permission_id": 65,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 188,
+    "role_id": 1,
+    "permission_id": 139,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 189,
+    "role_id": 1,
+    "permission_id": 110,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 190,
+    "role_id": 1,
+    "permission_id": 112,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 191,
+    "role_id": 1,
+    "permission_id": 111,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 192,
+    "role_id": 1,
+    "permission_id": 89,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 193,
+    "role_id": 1,
+    "permission_id": 117,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 194,
+    "role_id": 1,
+    "permission_id": 141,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 195,
+    "role_id": 2,
+    "permission_id": 13,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 196,
+    "role_id": 1,
+    "permission_id": 122,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 197,
+    "role_id": 1,
+    "permission_id": 133,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 198,
+    "role_id": 1,
+    "permission_id": 148,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 199,
+    "role_id": 1,
+    "permission_id": 125,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 200,
+    "role_id": 1,
+    "permission_id": 129,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 201,
+    "role_id": 2,
+    "permission_id": 21,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 202,
+    "role_id": 2,
+    "permission_id": 140,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 203,
+    "role_id": 2,
+    "permission_id": 65,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 204,
+    "role_id": 1,
+    "permission_id": 121,
+    "reason": "Team participant permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 205,
+    "role_id": 2,
+    "permission_id": 15,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 206,
+    "role_id": 2,
+    "permission_id": 104,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 207,
+    "role_id": 2,
+    "permission_id": 81,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 208,
+    "role_id": 2,
+    "permission_id": 111,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 209,
+    "role_id": 2,
+    "permission_id": 112,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 210,
+    "role_id": 2,
+    "permission_id": 117,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 211,
+    "role_id": 2,
+    "permission_id": 139,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 212,
+    "role_id": 2,
+    "permission_id": 106,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 213,
+    "role_id": 2,
+    "permission_id": 110,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 214,
+    "role_id": 2,
+    "permission_id": 149,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 215,
+    "role_id": 2,
+    "permission_id": 69,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 216,
+    "role_id": 2,
+    "permission_id": 89,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 217,
+    "role_id": 2,
+    "permission_id": 133,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 218,
+    "role_id": 2,
+    "permission_id": 141,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 219,
+    "role_id": 2,
+    "permission_id": 162,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 220,
+    "role_id": 2,
+    "permission_id": 158,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 221,
+    "role_id": 7,
+    "permission_id": 25,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 222,
+    "role_id": 2,
+    "permission_id": 73,
+    "reason": "General user permissions",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 223,
+    "role_id": 7,
+    "permission_id": 29,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 224,
+    "role_id": 7,
+    "permission_id": 37,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 225,
+    "role_id": 7,
+    "permission_id": 21,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 226,
+    "role_id": 7,
+    "permission_id": 125,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 227,
+    "role_id": 7,
+    "permission_id": 33,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 228,
+    "role_id": 7,
+    "permission_id": 117,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 229,
+    "role_id": 7,
+    "permission_id": 104,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 230,
+    "role_id": 4,
+    "permission_id": 57,
+    "reason": "System Judge auto-scoring permissions (internal use only)",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 231,
+    "role_id": 4,
+    "permission_id": 58,
+    "reason": "System Judge auto-scoring permissions (internal use only)",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 232,
+    "role_id": 7,
+    "permission_id": 133,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 233,
+    "role_id": 4,
+    "permission_id": 53,
+    "reason": "System Judge auto-scoring permissions (internal use only)",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 234,
+    "role_id": 7,
+    "permission_id": 65,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 235,
+    "role_id": 7,
+    "permission_id": 151,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 236,
+    "role_id": 7,
+    "permission_id": 139,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 237,
+    "role_id": 7,
+    "permission_id": 150,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.611Z",
+    "updated_at": "2025-11-30T18:38:53.611Z",
+    "deleted_at": null
+  },
+  {
+    "id": 238,
+    "role_id": 7,
+    "permission_id": 81,
+    "reason": "Volunteer view-only permissions for assigned teams",
+    "created_at": "2025-11-30T18:38:53.610Z",
+    "updated_at": "2025-11-30T18:38:53.610Z",
+    "deleted_at": null
+  },
+  {
+    "id": 389,
+    "role_id": 6,
+    "permission_id": 109,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 390,
+    "role_id": 6,
+    "permission_id": 13,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 391,
+    "role_id": 6,
+    "permission_id": 27,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 392,
+    "role_id": 6,
+    "permission_id": 29,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 393,
+    "role_id": 6,
+    "permission_id": 20,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 394,
+    "role_id": 6,
+    "permission_id": 23,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 395,
+    "role_id": 6,
+    "permission_id": 28,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 396,
+    "role_id": 6,
+    "permission_id": 2,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 397,
+    "role_id": 6,
+    "permission_id": 18,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 398,
+    "role_id": 6,
+    "permission_id": 25,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 399,
+    "role_id": 6,
+    "permission_id": 16,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 400,
+    "role_id": 6,
+    "permission_id": 15,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 401,
+    "role_id": 6,
+    "permission_id": 14,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 402,
+    "role_id": 6,
+    "permission_id": 19,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 403,
+    "role_id": 6,
+    "permission_id": 17,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 404,
+    "role_id": 6,
+    "permission_id": 26,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 405,
+    "role_id": 6,
+    "permission_id": 31,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 406,
+    "role_id": 6,
+    "permission_id": 33,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 407,
+    "role_id": 6,
+    "permission_id": 39,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 408,
+    "role_id": 6,
+    "permission_id": 34,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 409,
+    "role_id": 6,
+    "permission_id": 38,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 410,
+    "role_id": 6,
+    "permission_id": 37,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 411,
+    "role_id": 6,
+    "permission_id": 35,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 412,
+    "role_id": 6,
+    "permission_id": 21,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 413,
+    "role_id": 6,
+    "permission_id": 32,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 414,
+    "role_id": 6,
+    "permission_id": 41,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 415,
+    "role_id": 6,
+    "permission_id": 43,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 416,
+    "role_id": 6,
+    "permission_id": 45,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 417,
+    "role_id": 6,
+    "permission_id": 44,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 418,
+    "role_id": 6,
+    "permission_id": 42,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 419,
+    "role_id": 6,
+    "permission_id": 40,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 420,
+    "role_id": 6,
+    "permission_id": 36,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 421,
+    "role_id": 6,
+    "permission_id": 46,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 422,
+    "role_id": 6,
+    "permission_id": 30,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 423,
+    "role_id": 6,
+    "permission_id": 48,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 424,
+    "role_id": 6,
+    "permission_id": 53,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 425,
+    "role_id": 6,
+    "permission_id": 50,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 426,
+    "role_id": 6,
+    "permission_id": 52,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 427,
+    "role_id": 6,
+    "permission_id": 65,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 428,
+    "role_id": 6,
+    "permission_id": 47,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 429,
+    "role_id": 6,
+    "permission_id": 56,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 430,
+    "role_id": 6,
+    "permission_id": 54,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 431,
+    "role_id": 6,
+    "permission_id": 61,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 432,
+    "role_id": 6,
+    "permission_id": 60,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 433,
+    "role_id": 6,
+    "permission_id": 62,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 434,
+    "role_id": 6,
+    "permission_id": 66,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 435,
+    "role_id": 6,
+    "permission_id": 55,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 436,
+    "role_id": 6,
+    "permission_id": 51,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 437,
+    "role_id": 6,
+    "permission_id": 49,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 438,
+    "role_id": 6,
+    "permission_id": 64,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 439,
+    "role_id": 6,
+    "permission_id": 67,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 440,
+    "role_id": 6,
+    "permission_id": 70,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 441,
+    "role_id": 6,
+    "permission_id": 68,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 442,
+    "role_id": 6,
+    "permission_id": 72,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 443,
+    "role_id": 6,
+    "permission_id": 69,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 444,
+    "role_id": 6,
+    "permission_id": 63,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 445,
+    "role_id": 6,
+    "permission_id": 73,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 446,
+    "role_id": 6,
+    "permission_id": 76,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 447,
+    "role_id": 6,
+    "permission_id": 78,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 448,
+    "role_id": 6,
+    "permission_id": 80,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 449,
+    "role_id": 6,
+    "permission_id": 71,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 450,
+    "role_id": 6,
+    "permission_id": 79,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 451,
+    "role_id": 6,
+    "permission_id": 75,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 452,
+    "role_id": 6,
+    "permission_id": 82,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 453,
+    "role_id": 6,
+    "permission_id": 81,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 454,
+    "role_id": 6,
+    "permission_id": 74,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 455,
+    "role_id": 6,
+    "permission_id": 77,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 456,
+    "role_id": 6,
+    "permission_id": 83,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 457,
+    "role_id": 6,
+    "permission_id": 90,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 458,
+    "role_id": 6,
+    "permission_id": 84,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 459,
+    "role_id": 6,
+    "permission_id": 87,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 460,
+    "role_id": 6,
+    "permission_id": 89,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 461,
+    "role_id": 6,
+    "permission_id": 85,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 462,
+    "role_id": 6,
+    "permission_id": 86,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 463,
+    "role_id": 6,
+    "permission_id": 88,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 464,
+    "role_id": 6,
+    "permission_id": 141,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 465,
+    "role_id": 6,
+    "permission_id": 91,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 466,
+    "role_id": 6,
+    "permission_id": 95,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 467,
+    "role_id": 6,
+    "permission_id": 94,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 468,
+    "role_id": 6,
+    "permission_id": 92,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 469,
+    "role_id": 6,
+    "permission_id": 137,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 470,
+    "role_id": 6,
+    "permission_id": 98,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 471,
+    "role_id": 6,
+    "permission_id": 97,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 472,
+    "role_id": 6,
+    "permission_id": 96,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 473,
+    "role_id": 6,
+    "permission_id": 93,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 474,
+    "role_id": 6,
+    "permission_id": 101,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 475,
+    "role_id": 6,
+    "permission_id": 102,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 476,
+    "role_id": 6,
+    "permission_id": 113,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 477,
+    "role_id": 6,
+    "permission_id": 129,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 478,
+    "role_id": 6,
+    "permission_id": 160,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 479,
+    "role_id": 6,
+    "permission_id": 103,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 480,
+    "role_id": 6,
+    "permission_id": 120,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 481,
+    "role_id": 6,
+    "permission_id": 142,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 482,
+    "role_id": 6,
+    "permission_id": 165,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 483,
+    "role_id": 6,
+    "permission_id": 105,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 484,
+    "role_id": 6,
+    "permission_id": 116,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 485,
+    "role_id": 6,
+    "permission_id": 143,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 486,
+    "role_id": 6,
+    "permission_id": 155,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 487,
+    "role_id": 6,
+    "permission_id": 117,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 488,
+    "role_id": 6,
+    "permission_id": 134,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 489,
+    "role_id": 6,
+    "permission_id": 163,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 490,
+    "role_id": 6,
+    "permission_id": 139,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 491,
+    "role_id": 6,
+    "permission_id": 118,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 492,
+    "role_id": 6,
+    "permission_id": 133,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 493,
+    "role_id": 6,
+    "permission_id": 99,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 494,
+    "role_id": 6,
+    "permission_id": 114,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 495,
+    "role_id": 6,
+    "permission_id": 131,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 496,
+    "role_id": 6,
+    "permission_id": 164,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 497,
+    "role_id": 6,
+    "permission_id": 108,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 498,
+    "role_id": 6,
+    "permission_id": 124,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 499,
+    "role_id": 6,
+    "permission_id": 144,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 500,
+    "role_id": 6,
+    "permission_id": 156,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 501,
+    "role_id": 6,
+    "permission_id": 121,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 502,
+    "role_id": 6,
+    "permission_id": 136,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 503,
+    "role_id": 6,
+    "permission_id": 104,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 504,
+    "role_id": 6,
+    "permission_id": 115,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 505,
+    "role_id": 6,
+    "permission_id": 135,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 506,
+    "role_id": 6,
+    "permission_id": 152,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 507,
+    "role_id": 6,
+    "permission_id": 100,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 508,
+    "role_id": 6,
+    "permission_id": 138,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 509,
+    "role_id": 6,
+    "permission_id": 130,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 510,
+    "role_id": 6,
+    "permission_id": 161,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 511,
+    "role_id": 6,
+    "permission_id": 122,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 512,
+    "role_id": 6,
+    "permission_id": 145,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 513,
+    "role_id": 6,
+    "permission_id": 154,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 514,
+    "role_id": 6,
+    "permission_id": 106,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 515,
+    "role_id": 6,
+    "permission_id": 119,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 516,
+    "role_id": 6,
+    "permission_id": 132,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 517,
+    "role_id": 6,
+    "permission_id": 153,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 518,
+    "role_id": 6,
+    "permission_id": 140,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 519,
+    "role_id": 6,
+    "permission_id": 123,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 520,
+    "role_id": 6,
+    "permission_id": 157,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 521,
+    "role_id": 6,
+    "permission_id": 151,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 522,
+    "role_id": 6,
+    "permission_id": 110,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 523,
+    "role_id": 6,
+    "permission_id": 125,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 524,
+    "role_id": 6,
+    "permission_id": 146,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 525,
+    "role_id": 6,
+    "permission_id": 107,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 526,
+    "role_id": 6,
+    "permission_id": 126,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 527,
+    "role_id": 6,
+    "permission_id": 158,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 528,
+    "role_id": 6,
+    "permission_id": 112,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 529,
+    "role_id": 6,
+    "permission_id": 127,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 530,
+    "role_id": 6,
+    "permission_id": 162,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 531,
+    "role_id": 6,
+    "permission_id": 111,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 532,
+    "role_id": 6,
+    "permission_id": 128,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 533,
+    "role_id": 6,
+    "permission_id": 159,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 534,
+    "role_id": 6,
+    "permission_id": 57,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 535,
+    "role_id": 6,
+    "permission_id": 59,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 536,
+    "role_id": 6,
+    "permission_id": 58,
+    "reason": null,
+    "created_at": "2025-12-02T15:31:14.543Z",
+    "updated_at": "2025-12-02T15:31:14.543Z",
+    "deleted_at": null
+  },
+  {
+    "id": 537,
+    "role_id": 8,
+    "permission_id": 66,
+    "reason": null,
+    "created_at": "2025-12-04T15:20:59.909Z",
+    "updated_at": "2025-12-04T15:20:59.909Z",
+    "deleted_at": null
+  },
+  {
+    "id": 538,
+    "role_id": 8,
+    "permission_id": 68,
+    "reason": null,
+    "created_at": "2025-12-04T15:20:59.909Z",
+    "updated_at": "2025-12-04T15:20:59.909Z",
+    "deleted_at": null
+  },
+  {
+    "id": 539,
+    "role_id": 8,
+    "permission_id": 65,
+    "reason": null,
+    "created_at": "2025-12-04T15:20:59.909Z",
+    "updated_at": "2025-12-04T15:20:59.909Z",
+    "deleted_at": null
+  },
+  {
+    "id": 540,
+    "role_id": 8,
+    "permission_id": 67,
+    "reason": null,
+    "created_at": "2025-12-04T15:20:59.909Z",
+    "updated_at": "2025-12-04T15:20:59.909Z",
+    "deleted_at": null
+  }
+]

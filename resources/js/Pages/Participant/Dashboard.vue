@@ -10,7 +10,7 @@ import {computed} from "vue";
 const page = usePage();
 const participantInfo = computed(()=>page.props.authParticipantInfo);
 const hackathonTime = computed(()=>page.props.hackathonTime);
-const props = defineProps(['appChallengeCategory','zones','teamMembers','project_name','videolink','description','video30s','video240s','project_link','category_id','is_female_members','female_members','nasa_global_team_url','nasa_data_use','filelink']);
+const props = defineProps(['appChallengeCategory','sub_category_id','zones','teamMembers','project_name','videolink','description','project_link','category_id','filelink','termsAccepted','universities','university_id','team_type','submitDate']);
 const form = useForm({
     team_name: participantInfo.value ? participantInfo.value.team_name : '',
     team_member: participantInfo.value ? participantInfo.value.team_member :'',
@@ -18,8 +18,8 @@ const form = useForm({
     team_leader_mobile: participantInfo.value ? participantInfo.value.team_leader_mobile : '',
     team_leader_email: participantInfo.value ? participantInfo.value.team_leader_email : '',
     location: participantInfo.value ? participantInfo.value.location_id : '',
-    is_female_members: props.is_female_members || '',
-    female_members: props.female_members || 0 ,
+    university_id: props.university_id || 0 ,
+    team_type: props.team_type || 0 ,
     team_members: [],
     image:'',
 });
@@ -29,10 +29,10 @@ form.team_members = props.teamMembers && props.teamMembers.length ? props.teamMe
         name: member.name || '',
         email: member.email || '',
         mobile: member.mobile || ''
-    })) : [{ name: '', email: '', mobile: '' }];
+    })) : [];
 
 const addMember = () => {
-    if (form.team_members.length <= 5) {
+    if (form.team_members.length <= 6) {
         form.team_members.push({name: '', email: '', mobile: ''});
     }
 };
@@ -84,6 +84,7 @@ const handleFileInput = (event) => {
 <template>
 
     <Layout>
+        <Head title="Dashboard"/>
         <section style="margin-top: 5rem; padding-bottom: 2rem;">
             <div class="container">
                 <!-- Top Bar -->
@@ -110,7 +111,7 @@ const handleFileInput = (event) => {
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <form @submit.prevent="submit" class="dash-form p-2 p-md-4">
-                            <div class="fw-bold text-black fs-5">
+                            <div class="fw-bold fs-5">
                                 Team Information
                             </div>
                             <hr>
@@ -118,8 +119,8 @@ const handleFileInput = (event) => {
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="team_name" class="form-label">What is the name of your team? <sup class="text-danger">*</sup></label>
-                                        <input type="text" id="team_name" :value="participantInfo.team_name" class="form-control shadow-none" placeholder="Your team name" disabled>
-                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i></span>
+                                        <input type="text" id="team_name" v-model="form.team_name" class="form-control shadow-none" :class="{'is-invalid':form.errors.team_name}" placeholder="Your team name" >
+                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle">{{  form.errors.team_name }}</i></span>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -145,7 +146,7 @@ const handleFileInput = (event) => {
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
-                                        <label for="location" class="form-label">Region<sup class="text-danger">*</sup></label>
+                                        <label for="location" class="form-label">Location<sup class="text-danger">*</sup></label>
                                         <select class="form-select shadow-none" id="location" aria-label="Default select example" disabled>
                                             <option value="">Select One</option>
                                             <option v-for="zone in zones" :key="zone.id" :selected="zone.title === participantInfo.location">{{ zone.title }}</option>
@@ -153,35 +154,36 @@ const handleFileInput = (event) => {
                                         <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i></span>
                                     </div>
                                 </div>
+                                <!-- <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Team Type<sup class="text-danger">*</sup></label>
+                                        <select class="form-select shadow-none" id="location" aria-label="Default select example" :class="{'is-invalid':form.errors.team_type}" v-model="form.team_type">
+                                            <option value="">Select One</option>
+                                            <option value="individual">Individual</option>
+                                            <option value="team"> Team</option>
+                                        </select>
+                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle">{{  form.errors.team_type }}</i></span>
+                                    </div>
+                                </div> -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
-                                        <label for="image" class="form-label">Team Group Photo</label>
-                                        <input class="form-control" accept="image/png, image/jpg, image/jpeg"
-                                                type="file" :class="{'is-invalid':form.errors.image}"
-                                               @input="handleFileInput"
-                                               id="image">
-                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>{{form.errors.image}}</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-12">
-                                    <div class="mb-3">
                                         <label for="location" class="form-label">University<sup class="text-danger">*</sup></label>
-                                        <select class="form-select shadow-none" id="location" aria-label="Default select example" :class="{'is-invalid':form.errors.is_female_members}" v-model="form.is_female_members">
-                                            <option value="no" :selected="'no' == is_female_members">No</option>
-                                            <option value="yes">Yes</option>
+                                        <select class="form-select shadow-none" id="location" aria-label="Default select example" :class="{'is-invalid':form.errors.university_id}" v-model="form.university_id">{{ form.university_id }}
+                                            <option value="">Select One</option>
+                                            <option v-for="universitie in props.universities" :key="universitie.id" :value="universitie.id"> {{ universitie.name }}</option>
                                         </select>
-                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle">{{  form.errors.is_female_members }}</i></span>
+                                        <span class="invalid-feedback"><i class="bi bi-exclamation-triangle">{{  form.errors.university_id }}</i></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-2 mt-md-5 mb-2 mb-md-3">
                                 <div class="col-12" v-for="(member, index) in form.team_members" :key="index" :class="{'mt-3':index!==0}">
                                     <div class="d-flex justify-content-between">
-                                        <div class="fw-bold text-black team-member">
-                                            Team Member - (0{{ index + 1 }})
+                                        <div class="fw-bold team-member">
+                                            Member - (0{{ index + 2 }})
                                         </div>
                                         <div>
-                                            <button v-if="index > 0" type="button"
+                                            <button type="button"
                                                     class="bg-white border-0 add-member-btn text-sm"
                                                     @click="removeMember(index)">
                                                 <i class="fa-solid fa-trash me-2 text-danger"></i>
@@ -192,7 +194,7 @@ const handleFileInput = (event) => {
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
                                             <div class="mb-3">
-                                                <label :for="`name_${index+1}`" class="form-label">Name<sup
+                                                <label :for="`name_${index}`" class="form-label">Name<sup
                                                     class="text-danger">*</sup></label>
                                                 <input type="text" :id="`name_${index+1}`"
                                                        v-model="form.team_members[index].name"
@@ -236,7 +238,7 @@ const handleFileInput = (event) => {
                                     </div>
                                 </div>
                                 <div class="text-end">
-                                    <div v-if="form.team_members.length <= 4">
+                                    <div v-if="form.team_members.length <= 5">
                                         <button type="button" class="text-dark p-2 px-3 border-0 add-member-btn text-sm"
                                                 @click="addMember" style="background-color: transparent; font-size: 0.75rem;"><i class="fa-solid fa-user-plus me-1 me-xl-2"></i> Add Member
                                         </button>
@@ -253,9 +255,9 @@ const handleFileInput = (event) => {
                             </div>
                         </form>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <Project :appChallengeCategory="appChallengeCategory" :projectName ="props.project_name" :videolink="props.videolink" :description = "props.description" :categoryId="category_id" :nasaGlobalTeamUrl="props.nasa_global_team_url" :nasaDataUse="props.nasa_data_use" />
-                        <Hackathon :filelink="props.filelink" :videolink="props.videolink" :projectlink="props.project_link" />
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                        <Project :appChallengeCategory="appChallengeCategory" :projectName ="props.project_name" :description = "props.description" :categoryId="props.category_id" :subCategoryId="props.sub_category_id" :filelink="props.filelink" :videolink="props.videolink" :projectlink="props.project_link" :termsAccepted="props.termsAccepted" :submitDate="submitDate"/>
+                        <!-- <Hackathon :filelink="props.filelink" :videolink="props.videolink" :projectlink="props.project_link" :termsAccepted="props.termsAccepted" /> -->
                     </div>
                 </div>
             </div>
@@ -269,12 +271,19 @@ const handleFileInput = (event) => {
     border: 1px solid var(--purple-500); ;
 }
 .dash-form{
-    border: 1px solid var(--purple-500);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.25);
 }
 .top-bar{
-    background-image: url('/resources/js/assets/images/bg-breadcrumb.svg');
-    background-size: cover;
+    background-image: url('/resources/js/assets/images/bg-breadcrumb-top.webp');
+    /* background: var(--green-500); */
+    background-size: fill;
     background-position: center center;
+    border: none;
+    border-radius: 12px;
 }
 .small-counter{
     font-size: 0.75rem;

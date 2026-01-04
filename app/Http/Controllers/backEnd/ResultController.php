@@ -16,11 +16,10 @@ class ResultController extends Controller
 
     public function index(Request $request)
     {
-        $teams = Registration::with(['zone:id,title'])->when($request->location, function ($query, $location) {
+        $teams = Registration::with(['zone:id,title,code'])->when($request->location, function ($query, $location) {
                 return $query->where('zone_id', $location);
             })->where('session', 2025)->whereNotNull('final_score')->orderBy('final_score', 'desc')->paginate(15);
-
-        $zones = DB::table('zones')->select('id', 'title')->get();
+        $zones = DB::table('zones')->select('id', 'title','code')->get();
         return view($this->result . '.index', compact('teams', 'zones'));
     }
 
@@ -36,7 +35,7 @@ class ResultController extends Controller
 
     public function show(Request $request)
     {
-        $app = Registration::with('appChallengeCategory:id,title', 'zone')->findOrFail($request->id);
+        $app = Registration::with('appChallengeCategory:id,title','subChallengeCategory:id,title','zone','university')->findOrFail($request->id);
         return view($this->result . '.show', compact('app'));
     }
 
@@ -98,11 +97,11 @@ class ResultController extends Controller
 
                 if ($judgeCount > 0) {
                     $averages = [
-                        'influence'    => $marks->avg('round_influence'),
-                        'creativity'   => $marks->avg('round_creativity'),
-                        'validity'     => $marks->avg('round_validity'),
-                        'relevance'    => $marks->avg('round_relevance'),
-                        'presentation' => $marks->avg('round_presentation'),
+                        'influence'    => $marks->avg('round_influence') *.20,
+                        'creativity'   => $marks->avg('round_creativity') *.25,
+                        'validity'     => $marks->avg('round_validity') *.25,
+                        'relevance'    => $marks->avg('round_relevance') *.20,
+                        'presentation' => $marks->avg('round_presentation') *.10,
                     ];
 
                     $finalScore = array_sum($averages);

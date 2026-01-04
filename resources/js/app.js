@@ -6,9 +6,10 @@ import {resolvePageComponent} from 'laravel-vite-plugin/inertia-helpers';
 import {ZiggyVue} from '../../vendor/tightenco/ziggy';
 import AOS from 'aos'
 
+// const appName = import.meta.env.VITE_APP_NAME || 'NSAC';
 
 createInertiaApp({
-    title: (title) => `${title} - Millionx Bangladesh`,
+    title: (title) => `${title} - MillionX Bangladesh`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
     setup({el, App, props, plugin}) {
         return createApp({render: () => h(App, props)})
@@ -20,7 +21,7 @@ createInertiaApp({
             .mount(el);
     },
     progress: {
-        color: '#A321B9',
+        color: '#4D9A34',
         showSpinner: true
     },
 });

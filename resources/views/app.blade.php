@@ -3,13 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title inertia>{{ config('app.name', 'Millionx Bangladesh') }}</title>
-        <meta property="og:title" content="Millionx Bangladesh">
-        <meta name="description" content="Embark on an extraordinary journey with the NASA International Space Apps Challenge, where innovation meets collaboration, and boundaries are surpassed.">
-        <meta property="og:description" content="Embark on an extraordinary journey with the NASA International Space Apps Challenge, where innovation meets collaboration, and boundaries are surpassed.">
-        <meta property="keywords" content="nasa,nsac,apps, challenge, nasa challenge, nasa apps, nasa bangladesh">
-        <meta property="og:url" content="https://nsac.basis.org.bd">
-        <link rel="icon" type="image/x-icon" href="/uploads/images/logo.png">
+        <title inertia>{{ config('app.name', 'MillionX Bangladesh') }}</title>
+        <meta property="og:title" content="MillionX Bangladesh">
+        <meta property="og:url" content="https://millionxbangladesh.org/">
+        <link rel="icon" type="image/x-icon" href="/assets/logo.png">
         <link rel="stylesheet" href="{{asset('plugins/fontawesome/css/all.min.css')}}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

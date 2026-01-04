@@ -12,13 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('registrations', function (Blueprint $table) {
-            $table->string('team_work_score')->nullable()->after('nasa_global_team_url');
-            $table->string('user_experience_score')->nullable()->after('team_work_score');
-            $table->string('is_nasa_data_usage_score')->nullable()->after('user_experience_score');
-            $table->string('is_challenge_category_score')->nullable()->after('is_nasa_data_usage_score');
-            $table->string('id_project_link_score')->nullable()->after('is_challenge_category_score');
-            $table->string('is_nasa_global_team_url_score')->nullable()->after('id_project_link_score');
-            $table->string('nasa_data_use')->nullable()->after('description');
+            $table->unsignedBigInteger('sub_category_id')->nullable()->after('category_id');
+            $table->string('team_type')->nullable()->after('team_name');
+            $table->unsignedBigInteger('university_id')->nullable()->after('team_type');
+            $table->text('file_link')->nullable()->after('videolink');
+            $table->timestamp('submitDate')->nullable()->after('project_link');
         });
     }
 

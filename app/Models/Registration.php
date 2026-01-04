@@ -5,8 +5,8 @@ namespace App\Models;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-class Registration extends Authenticatable
+
+class Registration extends Model
 {
     use Sluggable, HasFactory;
 
@@ -38,6 +38,11 @@ class Registration extends Authenticatable
         return $this->belongsTo(AppChallengeCategory::class, 'category_id', 'id');
     }
 
+    public function subChallengeCategory()
+    {
+        return $this->belongsTo(AppChallengeCategory::class, 'sub_category_id', 'id');
+    }
+
     public function appChallengeInfo()
     {
         return $this->belongsTo(AppChallengeInfo::class, 'app_challenge_id', 'id');
@@ -45,7 +50,12 @@ class Registration extends Authenticatable
 
     public function zone()
     {
-        return $this->belongsTo(Zone::class, 'zone_id', 'id');
+        return $this->belongsTo(Zone::class, 'zone_id', 'code');
+    }
+
+    public function university()
+    {
+        return $this->belongsTo(Universities::class, 'university_id', 'id');
     }
 
     public function scopeFilter($query, array $filter)
@@ -63,7 +73,7 @@ class Registration extends Authenticatable
         return $this->belongsToMany(Room::class, 'project_room', 'registrations_id', 'room_id')
                     ->withTimestamps();
     }
-
+    
     public function marks()
     {
         return $this->hasMany(Mark::class, 'registration_id');

@@ -18,6 +18,7 @@ use Carbon\Carbon;
 use Maatwebsite\Excel\Facades\Excel;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Universities;
 
 class ApplicationController extends Controller
 {
@@ -68,6 +69,9 @@ class ApplicationController extends Controller
             ->when($request->email, function ($query, $email) {
                 return $query->where('team_leader_email', $email);
             })
+            ->when($request->status, function ($query, $status ) {
+                return $query->where('status', $status);
+            })
             ->orderBy('registration_no', 'asc')->paginate()->withQueryString();
 
         $categories = $this->getCategories();
@@ -83,13 +87,13 @@ class ApplicationController extends Controller
     public function show($id): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
         return view("{$this->dir}.show", [
-            'app' => Registration::with('appChallengeCategory:id,title', 'zone')->findOrFail($id)
+            'app' => Registration::with('appChallengeCategory:id,title','subChallengeCategory:id,title','zone','university')->findOrFail($id)
         ]);
     }
 
     public function excelExport(Request $request)
     {
-        $filteredApplications = Registration::with('appChallengeCategory:id,title', 'zone')
+        $filteredApplications = Registration::with('appChallengeCategory:id,title','subChallengeCategory:id,title', 'zone')
             ->when($request->date, function ($query, $dates) {
                 [$startDate, $endDate] = explode(" - ", $dates);
                 $startDate = Carbon::createFromFormat('d/m/Y', $startDate)->startOfDay();
@@ -120,6 +124,9 @@ class ApplicationController extends Controller
             ->when($request->email, function ($query, $email) {
                 return $query->where('team_leader_email', $email);
             })
+            ->when($request->status, function ($query, $status ) {
+                return $query->where('status', $status);
+            })
             ->latest()
             ->get();
 
@@ -130,7 +137,9 @@ class ApplicationController extends Controller
     {
         return view("{$this->dir}.edit", [
             'app' => Registration::findOrFail($id),
-            'challengeCategories' => DB::table('app_challenge_categories')->whereStatus('active')->get(),
+            'challengeCategories' => DB::table('app_challenge_categories')->whereNull('parent_id')->whereStatus('active')->get(),
+            'subChallengeCategories' => DB::table('app_challenge_categories')->whereNot('parent_id')->whereStatus('active')->get(),
+            'universities' => Universities::where('is_active', 1 )->get() ,
             'zones' => DB::table('zones')->whereStatus('active')->get(),
         ]);
     }
@@ -139,9 +148,13 @@ class ApplicationController extends Controller
     {
         $request->validate([
             'category' => 'nullable|integer',
+            'sub_category_id' => 'nullable|integer',
             'project_name' => 'required|max:200',
-            'video_link' => 'nullable|url|max:200',
-            'nasa_link' => 'nullable|url|max:350',
+            'videolink' => 'nullable|url|max:200',
+            'file_link' => 'nullable|url|max:200',
+            'project_link' => 'nullable|url|max:200',
+            'team_type' => 'nullable',
+            'university_id' => 'nullable',
             'description' => 'required',
             'team_name' => 'required|max:200',
             'team_leader_name' => 'required|max:120',
@@ -149,7 +162,7 @@ class ApplicationController extends Controller
             'team_leader_email' => 'required|email',
             'location' => 'required',
             'image' => 'nullable|mimes:png,jpeg,jpg|max:3400',
-            'team_members' => 'required|array',
+            'team_members' => 'nullable|array',
             'team_members.*.name' => 'required|max:150',
             'team_members.*.email' => 'required|email',
             'team_members.*.mobile' => 'required|digits:11',
@@ -159,7 +172,7 @@ class ApplicationController extends Controller
         $data = array_merge($request->except('team_members'), [
             'category_id' => $request->category,
             'zone_id' => $request->location,
-            'videolink' => $request->video_link,
+            'videolink' => $request->videolink,
         ]);
 
         $team_members = $request->team_members;
@@ -174,8 +187,12 @@ class ApplicationController extends Controller
             $data['image'] = $image;
         }
         $register_user->fill($data)->save();
-        $register_user->teamMembers()->delete($team_members);
-        $register_user->teamMembers()->createMany($team_members);
+        if(empty($team_members)){
+            $register_user->teamMembers()->delete($team_members);
+        }else{
+            $register_user->teamMembers()->delete($team_members);
+            $register_user->teamMembers()->createMany($team_members);
+        }
 
         return redirect()->back()->with('success', 'Application has been update.');
     }
@@ -377,5 +394,12 @@ Warm regards,
     <strong>Local Organizer</strong><br>
     NASA Space Apps Challenge Bangladesh 2023
 </p>';
+    }
+
+
+    public function statusUpdate(Request $request)
+    {
+        Registration::where('id', $request->id)->update(['status' => $request->status]);
+        return redirect()->back()->with('success', 'Application status has been updated.');
     }
 }

@@ -17,7 +17,7 @@ class IndexController extends Controller
     {
         $zones = DB::table('zones')->get();
         $userId = auth()->user()->id;
-        $projects = Registration::with(['zone:id,title'])->whereHas('rooms.judges', function ($query) use ($userId) {
+        $projects = Registration::with(['zone:id,title,code'])->whereHas('rooms.judges', function ($query) use ($userId) {
             $query->where('users.id', $userId);})->when($request->location, function ($query, $location) {
                 return $query->where('zone_id', $location);
             })->select('id','registration_no','team_name','zone_id')->paginate(15);
@@ -26,7 +26,7 @@ class IndexController extends Controller
 
     public function view(Request $request)
     {
-        $project =Registration::with(['zone:id,title','appChallengeCategory'])->where('id', $request->id)->select('id','registration_no','team_name','project_name','description','file_link','videolink','project_link','zone_id','category_id')->first();
+        $project =Registration::with(['zone:id,title,code','appChallengeCategory','subChallengeCategory'])->where('id', $request->id)->select('id','category_id','sub_category_id','registration_no','team_name','project_name','description','videolink','file_link','project_link','zone_id')->first();
          $mark = Mark::where('user_id', Auth::id())->where('registration_id', $request->id)->first();
         return view($this->room . '.view', compact('project','mark'));
     }

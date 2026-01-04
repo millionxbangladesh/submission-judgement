@@ -1,0 +1,1262 @@
+[
+    {
+        "name": "University of Dhaka",
+        "type": "Public (General)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "1921",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Rajshahi",
+        "type": "Public (General)",
+        "location": "Rajshahi (Rajshahi District)",
+        "established": "1953",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Chittagong",
+        "type": "Public (General)",
+        "location": "Hathazari, Chittagong District",
+        "established": "1966",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Jahangirnagar University",
+        "type": "Public (General)",
+        "location": "Savar, Dhaka District",
+        "established": "1970",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Islamic University, Kushtia",
+        "type": "Public (General)",
+        "location": "Kushtia (Kushtia District)",
+        "established": "1979",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Khulna University",
+        "type": "Public (General)",
+        "location": "Khulna (Khulna District)",
+        "established": "1991",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Jagannath University",
+        "type": "Public (General)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "2005",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Comilla University",
+        "type": "Public (General)",
+        "location": "Cumilla (Comilla District)",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Jatiya Kabi Kazi Nazrul Islam University (Trishal)",
+        "type": "Public (General)",
+        "location": "Trishal, Mymensingh District",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh University of Professionals (BUP)",
+        "type": "Public (General)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "2008",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Begum Rokeya University, Rangpur",
+        "type": "Public (General)",
+        "location": "Rangpur (Rangpur District)",
+        "established": "2008",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Barisal",
+        "type": "Public (General)",
+        "location": "Barisal (Barisal District)",
+        "established": "2011",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Rabindra University, Bangladesh (Sirajganj)",
+        "type": "Public (General)",
+        "location": "Shahjadpur, Sirajganj District",
+        "established": "2017",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Netrokona University (fmr. Sheikh Hasina Univ)",
+        "type": "Public (General)",
+        "location": "Netrokona (Netrokona District)",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Kishoreganj University (fmr. BSMR Univ)",
+        "type": "Public (General)",
+        "location": "Kishoreganj (Kishoreganj District)",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Meherpur University",
+        "type": "Public (General)",
+        "location": "Meherpur (Meherpur District)",
+        "established": "2022",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Thakurgaon University",
+        "type": "Public (General)",
+        "location": "Thakurgaon (Thakurgaon District)",
+        "established": "2022",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Naogaon University",
+        "type": "Public (General)",
+        "location": "Naogaon (Naogaon District)",
+        "established": "2022",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Shahjalal University of Science & Technology (SUST)",
+        "type": "Public (Science & Tech)",
+        "location": "Sylhet (Sylhet District)",
+        "established": "1986",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Hajee Mohammad Danesh Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Dinajpur (Dinajpur District)",
+        "established": "1999",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Mawlana Bhashani Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Tangail (Tangail District)",
+        "established": "1999",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Patuakhali Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Dumki, Patuakhali District",
+        "established": "2000",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Noakhali Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Noakhali (Noakhali District)",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Jashore University of Science & Technology (JUST)",
+        "type": "Public (Science & Tech)",
+        "location": "Jashore (Jessore District)",
+        "established": "2007",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Pabna University of Science & Technology (PUST)",
+        "type": "Public (Science & Tech)",
+        "location": "Pabna (Pabna District)",
+        "established": "2008",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangabandhu Sheikh Mujib Science & Tech Univ (GSTU)",
+        "type": "Public (Science & Tech)",
+        "location": "Gopalganj (Gopalganj District)",
+        "established": "2011",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Rangamati Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Rangamati (Rangamati District)",
+        "established": "2014",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangamata Sheikh F. Mujib Science & Tech Univ (JSTU)",
+        "type": "Public (Science & Tech)",
+        "location": "Jamalpur (Jamalpur District)",
+        "established": "2017",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Chandpur Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Chandpur (Chandpur District)",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Sunamganj Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Sunamganj (Sunamganj District)",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bogura Science & Tech University (BSTU)",
+        "type": "Public (Science & Tech)",
+        "location": "Bogura (Bogra District)",
+        "established": "2023",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Lakshmipur Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Lakshmipur (Lakshmipur District)",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Pirojpur Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Pirojpur (Pirojpur District)",
+        "established": "2022",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Satkhira University of Science & Tech",
+        "type": "Public (Science & Tech)",
+        "location": "Satkhira (Satkhira District)",
+        "established": "2023",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Narayanganj Science & Tech University",
+        "type": "Public (Science & Tech)",
+        "location": "Narayanganj (Narayanganj District)",
+        "established": "2023",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh University of Engineering & Technology (BUET)",
+        "type": "Public (Engineering)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "1962",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Military Institute of Science & Technology (MIST)",
+        "type": "Public (Engineering)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "1998",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Rajshahi Univ of Engineering & Technology (RUET)",
+        "type": "Public (Engineering)",
+        "location": "Rajshahi (Rajshahi District)",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Khulna Univ of Engineering & Technology (KUET)",
+        "type": "Public (Engineering)",
+        "location": "Khulna (Khulna District)",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Chittagong Univ of Engineering & Technology (CUET)",
+        "type": "Public (Engineering)",
+        "location": "Chittagong (Chattogram District)",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Dhaka Univ of Engineering & Technology (DUET)",
+        "type": "Public (Engineering)",
+        "location": "Gazipur (Gazipur District)",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Agricultural University (BAU)",
+        "type": "Public (Agricultural)",
+        "location": "Mymensingh (Mymensingh District)",
+        "established": "1961",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Gazipur Agricultural University (BSMRAU)",
+        "type": "Public (Agricultural)",
+        "location": "Gazipur (Gazipur District)",
+        "established": "1998",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Sher-e-Bangla Agricultural University",
+        "type": "Public (Agricultural)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Sylhet Agricultural University",
+        "type": "Public (Agricultural)",
+        "location": "Sylhet (Sylhet District)",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Khulna Agricultural University",
+        "type": "Public (Agricultural)",
+        "location": "Khulna (Khulna District)",
+        "established": "2019",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Habiganj Agricultural University",
+        "type": "Public (Agricultural)",
+        "location": "Habiganj (Habiganj District)",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Kurigram Agricultural University",
+        "type": "Public (Agricultural)",
+        "location": "Kurigram (Kurigram District)",
+        "established": "2022",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Shariatpur Agricultural University",
+        "type": "Public (Agricultural)",
+        "location": "Shariatpur (Shariatpur District)",
+        "established": "2021",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
+        "type": "Public (Medical)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "1998",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Chittagong Medical University",
+        "type": "Public (Medical)",
+        "location": "Chittagong (Chattogram District)",
+        "established": "2016",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Rajshahi Medical University",
+        "type": "Public (Medical)",
+        "location": "Rajshahi (Rajshahi District)",
+        "established": "2017",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Sylhet Medical University",
+        "type": "Public (Medical)",
+        "location": "Sylhet (Sylhet District)",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Khulna Medical University",
+        "type": "Public (Medical)",
+        "location": "Khulna (Khulna District)",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Chittagong Veterinary and Animal Sciences Univ",
+        "type": "Public (Specialized - Veterinary)",
+        "location": "Chittagong (Chattogram District)",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh University of Textiles (BUTEX)",
+        "type": "Public (Specialized Textile)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "2010",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangabandhu Sheikh Mujib Maritime University (BSMRMU) - Chattogram",
+        "type": "Public (Specialized Maritime)",
+        "location": "Chittagong (Chattogram District)",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangabandhu Sheikh Mujib Digital Univ (BDU), Gazipur",
+        "type": "Public (Specialized - ICT)",
+        "location": "Gazipur (Gazipur District)",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangabandhu Sheikh Mujib Aviation & Aerospace Univ (BSMRAAU)",
+        "type": "Public (Specialized - Aerospace)",
+        "location": "Lalmonirhat (Lalmonirhat Dist.)",
+        "established": "2019",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "National University of Bangladesh (affiliating)",
+        "type": "Public (Special-Purpose)",
+        "location": "Gazipur (Gazipur District)",
+        "established": "1992",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Open University (distance learning)",
+        "type": "Public (Special-Purpose)",
+        "location": "Gazipur (Gazipur District)",
+        "established": "1992",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Islamic Arabic University (madrasa-affiliating)",
+        "type": "Public (Special-Purpose)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Dhaka Central University (affiliated colleges)",
+        "type": "Public (Special-Purpose)",
+        "location": "Dhaka (Dhaka District)",
+        "established": "2025",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "International University of Business Agriculture & Tech (IUBAT)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1992",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "North South University (NSU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1992",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Independent University, Bangladesh (IUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1993",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "American International University-Bangladesh (AIUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1994",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Dhaka International University (DIU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1995",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "International Islamic University, Chittagong (IIUC)",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "1995",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Asian University of Bangladesh (AUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1996",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "East West University (EWU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1996",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Gono Bishwabidyalay (Gono University)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1996",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "People's University of Bangladesh (PUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1996",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Queens University, Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1996",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Asia Pacific (UAP)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "1996",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Chittagong Independent University (CIU)",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "1999",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh University",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "BGC Trust University Bangladesh",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "BRAC University (BracU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Manarat International University (MIU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Premier University, Chittagong",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Southern University, Bangladesh",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Sylhet International University (SIU)",
+        "type": "Private (General)",
+        "location": "Sylhet",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Development Alternative (UODA)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "City University, Bangladesh",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Daffodil International University (DIU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Green University of Bangladesh (GUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "IBAIS University (International Business Admin & Info System)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Leading University, Sylhet",
+        "type": "Private (General)",
+        "location": "Sylhet",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Northern University, Bangladesh (NUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Prime University, Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Southeast University (SEU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Stamford University Bangladesh",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2002",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "State University of Bangladesh (SUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Eastern University, Bangladesh",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Metropolitan University, Sylhet",
+        "type": "Private (General)",
+        "location": "Sylhet",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Millennium University, Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Primeasia University, Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Royal University of Dhaka (RUD)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "United International University (UIU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Information Technology & Sciences (UITS)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of South Asia, Bangladesh (USA)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Presidency University, Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Uttara University, Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Victoria University of Bangladesh (VUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "World University of Bangladesh (WUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "ASA University Bangladesh (ASAUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Islami University (BIU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "East Delta University (EDU)",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "2006",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Northern University of Business & Technology, Khulna",
+        "type": "Private (General)",
+        "location": "Khulna",
+        "established": "2010",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Britannia University, Cumilla",
+        "type": "Private (General)",
+        "location": "Cumilla (Comilla)",
+        "established": "2010",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Feni University",
+        "type": "Private (General)",
+        "location": "Feni",
+        "established": "2010",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Khwaja Yunus Ali University (KYAU)",
+        "type": "Private (General)",
+        "location": "Sirajganj",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "European University of Bangladesh (EUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "First Capital University of Bangladesh, Chuadanga",
+        "type": "Private (General)",
+        "location": "Chuadanga",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "BGMEA University of Fashion & Technology (BUFT)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Hamdard University Bangladesh (HUB)",
+        "type": "Private (General)",
+        "location": "Munshiganj",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Ishakha International University (IIUB)",
+        "type": "Private (General)",
+        "location": "Kishoreganj",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "North East University Bangladesh (NEUB)",
+        "type": "Private (General)",
+        "location": "Sylhet",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "North Western University, Khulna (NWU)",
+        "type": "Private (General)",
+        "location": "Khulna",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Port City International University (PCIU)",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Varendra University (VU), Rajshahi",
+        "type": "Private (General)",
+        "location": "Rajshahi",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Sonargaon University (SU), Dhaka",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Cox's Bazar International University (CBIU)",
+        "type": "Private (General)",
+        "location": "Cox's Bazar",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Fareast International University (FIU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "German University Bangladesh (GUB)",
+        "type": "Private (General)",
+        "location": "Gazipur",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "North Bengal International University (NBIU)",
+        "type": "Private (General)",
+        "location": "Rajshahi",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Notre Dame University Bangladesh (NDUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Ranada Prasad Shaha University (RPSU)",
+        "type": "Private (General)",
+        "location": "Narayanganj",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Brahmaputra International University (BIU)",
+        "type": "Private (General)",
+        "location": "Jamalpur",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Times University Bangladesh",
+        "type": "Private (General)",
+        "location": "Faridpur",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Canadian University of Bangladesh (CUB)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Global University Bangladesh",
+        "type": "Private (General)",
+        "location": "Barisal",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "NPI University of Bangladesh (NPIUB)",
+        "type": "Private (General)",
+        "location": "Manikganj",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Rabindra Maitree University (RMU)",
+        "type": "Private (General)",
+        "location": "Kushtia",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Scholars (IUS)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Creative Technology Chittagong (UCTC)",
+        "type": "Private (General)",
+        "location": "Chittagong",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Anwer Khan Modern University (AKMU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2016",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Global Village (UGV)",
+        "type": "Private (General)",
+        "location": "Barisal",
+        "established": "2016",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Khulna Khan Bahadur Ahsanullah University (KKBAU)",
+        "type": "Private (General)",
+        "location": "Khulna",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Trust University, Barishal (TUB)",
+        "type": "Private (General)",
+        "location": "Barisal",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Brahmanbaria (UBr)",
+        "type": "Private (General)",
+        "location": "Brahmanbaria",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Skill Enrichment & Technology (USET)",
+        "type": "Private (General)",
+        "location": "Narayanganj",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "International Standard University (ISU)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "ZNRF University of Management Sciences (ZUMS)",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2018",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bandarban University (BdU)",
+        "type": "Private (General)",
+        "location": "Bandarban",
+        "established": "2019",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "RTM Al-Kabir Technical University (RTM-AKTU)",
+        "type": "Private (General)",
+        "location": "Sylhet",
+        "established": "2020",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Grameen University",
+        "type": "Private (General)",
+        "location": "Dhaka",
+        "established": "2025",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Science & Technology Chittagong (USTC)",
+        "type": "Private (Science & Tech)",
+        "location": "Chittagong",
+        "established": "1992",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Ahsanullah University of Science & Technology (AUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Dhaka",
+        "established": "1995",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Pundra University of Science & Technology (PDUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Bogura (Bogra)",
+        "established": "2001",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh University of Business & Technology (BUBT)",
+        "type": "Private (Science & Tech)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Atish Dipankar Univ of Science & Technology (ADUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Dhaka",
+        "established": "2004",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Z.H. Sikder University of Science & Technology (ZHSUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Shariatpur",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Rajshahi Science & Technology University (RSTU), Natore",
+        "type": "Private (Science & Tech)",
+        "location": "Natore",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Army International Univ of Science & Tech (BAIUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Cumilla",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Army University of Science & Technology, Khulna (BAUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Khulna",
+        "established": "2021",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Army University of Science & Technology, Saidpur (BAUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Saidpur",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "CCN University of Science & Technology (CCN-UST)",
+        "type": "Private (Science & Tech)",
+        "location": "Cumilla",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Central University of Science & Technology (CUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Dhaka",
+        "established": "2016",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "International Islami University of Science & Technology, Dhaka (IIUSTB)",
+        "type": "Private (Science & Tech)",
+        "location": "Dhaka",
+        "established": "2023",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Microland University of Science & Technology, Dhaka (MUST)",
+        "type": "Private (Science & Tech)",
+        "location": "Dhaka",
+        "established": "2014",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Lalon University of Science & Arts (LUSA), Kushtia",
+        "type": "Private (Science & Arts)",
+        "location": "Kushtia",
+        "established": "2023",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Central Women's University (CWU)",
+        "type": "Private (Women's University)",
+        "location": "Dhaka",
+        "established": "1993",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Shanto-Mariam University of Creative Technology (SMUCT)",
+        "type": "Private (Creative Arts & Tech)",
+        "location": "Dhaka",
+        "established": "2003",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "University of Liberal Arts Bangladesh (ULAB)",
+        "type": "Private (Liberal Arts/Media)",
+        "location": "Dhaka",
+        "established": "2004",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh University of Health Sciences (BUHS)",
+        "type": "Private (Health Sciences)",
+        "location": "Dhaka",
+        "established": "2012",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Exim Bank Agricultural University Bangladesh (EBAUB)",
+        "type": "Private (Agricultural)",
+        "location": "Chapainawabganj",
+        "established": "2013",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Bangladesh Army University of Engineering & Technology (BAUET)",
+        "type": "Private (Engineering)",
+        "location": "Natore",
+        "established": "2015",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Tagore University of Creative Arts (TUCA)",
+        "type": "Private (Creative Arts)",
+        "location": "Dhaka",
+        "established": "2016",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Islamic University of Technology (IUT)",
+        "type": "International (OIC-affiliated)",
+        "location": "Gazipur",
+        "established": "1978",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Asian University for Women (AUW)",
+        "type": "International (Women's University)",
+        "location": "Chittagong",
+        "established": "2008",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "International Culture University (ICU)",
+        "type": "International (Civil Society-run)",
+        "location": "Dhaka",
+        "established": "2009",
+        "status": "UGC Approved"
+    },
+    {
+        "name": "Mymensingh University of Engineering & Technology (MUET)",
+        "type": "Public (Engineering)",
+        "location": "Mymensingh (Mymensingh Dist.)",
+        "established": "Proposed (Act pending)",
+        "status": "Proposed (Act pending)"
+    },
+    {
+        "name": "Mymensingh Medical University (MMU)",
+        "type": "Public (Medical)",
+        "location": "Mymensingh (Mymensingh Dist.)",
+        "established": "Proposed (Act passed)",
+        "status": "Proposed (Act passed)"
+    },
+    {
+        "name": "Thakurgaon University of Science & Technology (TSTU)",
+        "type": "Public (Science & Tech)",
+        "location": "Thakurgaon (Rangpur Dist.)",
+        "established": "Proposed (approved in principle)",
+        "status": "Proposed (approved in principle)"
+    },
+    {
+        "name": "Marine Science University of Barisal (MSUB)",
+        "type": "Public (Ocean/Maritime)",
+        "location": "Barisal (Barisal District)",
+        "established": "Proposed",
+        "status": "Proposed"
+    },
+    {
+        "name": "Michael Madhusudan Cultural University (MMCU)",
+        "type": "Public (Cultural Studies)",
+        "location": "Jashore (Khulna District)",
+        "established": "Proposed",
+        "status": "Proposed"
+    },
+    {
+        "name": "Bangladesh University of Juridical Sciences (BUJS)",
+        "type": "Public (Law/Judiciary)",
+        "location": "(TBD)",
+        "established": "Proposed",
+        "status": "Proposed"
+    },
+    {
+        "name": "Bangladesh Univ of Educational Planning & Administration (BUEdPA)",
+        "type": "Public (Education Management)",
+        "location": "(TBD)",
+        "established": "Proposed",
+        "status": "Proposed"
+    }
+]

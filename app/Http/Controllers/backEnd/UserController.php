@@ -8,9 +8,18 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::whereNotIn('role', [1, 2])->orderBy('id', 'desc')->paginate(15);
+        $users = User::whereNotIn('role', [1, 2])
+            ->when($request->role, fn($q) => $q->where('role', $request->role))
+            ->when($request->name, fn($q) => $q->where('name', 'LIKE', '%' . $request->name . '%'))
+            ->when($request->organization, fn($q) => $q->where('organization', 'LIKE', '%' . $request->organization . '%'))
+            ->when($request->email, fn($q) => $q->where('email', 'LIKE', '%' . $request->email . '%'))
+            ->when($request->phone, fn($q) => $q->where('phone', 'LIKE', '%' . $request->phone . '%'))
+            ->orderBy('id', 'desc')
+            ->paginate(15)
+            ->withQueryString();
+
         return view('backEnd.user.index', compact('users'));
     }
 

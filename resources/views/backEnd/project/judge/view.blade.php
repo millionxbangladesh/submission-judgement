@@ -24,6 +24,7 @@
                 </div>
                     @php
                         $catInfo = getCatiInfo($project->category_id);
+                        $subCatInfo = getCatiInfo($project->sub_category_id);
                     @endphp
                 <div class="card-body project-details">
                     <div class="row">
@@ -40,12 +41,20 @@
                             <span class="value ms-2">{{ $project->project_name }}</span>
                         </div>
                         <div class="col-12 mb-3 d-flex align-items-start">
-                            <span class="label"><i class="bx bx-align-left"></i>Challenge category:</span>
+                            <span class="label"><i class="bx bx-align-left"></i>Domain:</span>
                             <span class="value ms-2">{{ $catInfo?->title ?? 'N/A'  }}</span>
                         </div>
                         <div class="col-12 mb-3 d-flex align-items-start">
+                            <span class="label"><i class="bx bx-align-left"></i>Challenge Topic:</span>
+                            <span class="value ms-2">{{ $subCatInfo?->title ?? 'N/A'  }}</span>
+                        </div>
+                        <div class="col-12 mb-3 d-flex align-items-start">
                             <span class="label"><i class="bx bx-align-left"></i>Description:</span>
-                            <span class="value ms-2">{{ $catInfo?->description ?? 'N/A'  }} <br> {{ $catInfo?->background  }}<br> {{ $catInfo?->your_challenge }}</span>
+                            <span class="value ms-2">{{ $subCatInfo?->challenges ?? 'N/A'  }}</span>
+                        </div>
+                        <div class="col-12 mb-3 d-flex align-items-start">
+                            <span class="label"><i class="bx bx-align-left"></i>Team Description:</span>
+                            <span class="value ms-2">{{ $project->description ?? 'N/A'  }}</span>
                         </div>
                     </div>
                 </div>
@@ -54,7 +63,7 @@
         <div class="col-md-5">
             <div class="card w-75 w-md-100 mx-auto">
                 <div class="card-header rounded-top mb-4 border border-success border-end-0 border-start-0 text-center">
-                    <h5 class="mb-0"> Hackathon Submission</h5>
+                    <h5 class="mb-0"> Final Submission</h5>
                 </div>
                 <div class="card-body project-details">
                     <div class="mb-3 d-flex align-items-center">
@@ -116,24 +125,16 @@
                         <table class="table table-striped table-bordered">
                             <thead class="border">
                             <tr>
-                                <th class="fw-bold fs-6 text-center text-capitalize">Impact (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Innovation (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Technical (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Scalability (1-10)</th>
+                                <th class="fw-bold fs-6 text-center text-capitalize">Impact (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Presentation (1-10)</th>
                                 <th class="fw-bold fs-6 text-center text-capitalize">Confirm</th>
                             </tr>
                             </thead>
                             <tbody class="border">
                                 <tr>
-                                    <td>
-                                        <select name="influence" class="form-select mark-input" @if(isset($mark)) disabled @endif required>
-                                            <option value="" disabled {{ empty($mark->influence) ? 'selected' : '' }}>Select</option>
-                                            @for( $i = ($mark->influence ?? 1); $i <= 10; $i++)
-                                                <option value="{{ $i }}" {{ (isset($mark) && $mark->influence == $i) ? 'selected' : '' }}>{{ $i }}</option>
-                                            @endfor
-                                        </select>
-                                    </td>
                                     <td>
                                         <select name="creativity" class="form-select mark-input" @if(isset($mark)) disabled @endif required>
                                             <option value="" disabled {{ empty($mark->creativity) ? 'selected' : '' }}>Select</option>
@@ -155,6 +156,14 @@
                                             <option value="" disabled {{ empty($mark->relevance) ? 'selected' : '' }}>Select</option>
                                             @for($i = ($mark->relevance ?? 1); $i <= 10; $i++)
                                                 <option value="{{ $i }}" {{ (isset($mark) && $mark->relevance == $i) ? 'selected' : '' }}>{{ $i }}</option>
+                                            @endfor
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="influence" class="form-select mark-input" @if(isset($mark)) disabled @endif required>
+                                            <option value="" disabled {{ empty($mark->influence) ? 'selected' : '' }}>Select</option>
+                                            @for( $i = ($mark->influence ?? 1); $i <= 10; $i++)
+                                                <option value="{{ $i }}" {{ (isset($mark) && $mark->influence == $i) ? 'selected' : '' }}>{{ $i }}</option>
                                             @endfor
                                         </select>
                                     </td>

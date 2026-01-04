@@ -37,7 +37,7 @@
                         <select name="location" id="location" class="form-select">
                             <option value="" disabled {{ request('location') ? '' : 'selected' }}>Select Region</option>
                             @foreach($zones as $zone)
-                                <option value="{{ $zone->id }}" {{ request('location') == $zone->id ? 'selected' : '' }}>
+                                <option value="{{ $zone->code }}" {{ request('location') == $zone->id ? 'selected' : '' }}>
                                     {{ $zone->title }}
                                 </option>
                             @endforeach
@@ -59,7 +59,7 @@
                 <table class="table table-striped">
                     <thead class="border">
                     <tr>
-                        <th class="fw-bold text-capitalize">SL.</th>
+                        <th class="fw-bold text-center text-capitalize">SL.</th>
                         <th class="fw-bold text-center text-capitalize">Region</th>
                         <th class="fw-bold text-capitalize">Registration No</th>
                         <th class="fw-bold text-capitalize">Team Name</th>
@@ -69,7 +69,7 @@
                     <tbody class="border">
                         @foreach ($projects as $key=>$project )
                             <tr>
-                                <td>{{ $projects->firstItem() + $key }}</td>
+                                <td class="text-center">{{ $projects->firstItem() + $key }}</td>
                                 <td><span class="badge bg-label-info w-100 mt-2"><i style="font-size: 10px" class="bx bx-map-pin"></i>   {{ $project->zone->title }}</span></td>
                                 <td>{{ $project->registration_no  }}</td>
                                 <td>{{ $project->team_name }}</td>

@@ -11,6 +11,6 @@ class Zone extends Model
     protected $guarded = ['id'];
     public function applications()
     {
-        return $this->hasMany(Registration::class,'zone_id');
+        return $this->hasMany(Registration::class,'zone_id' ,'code');
     }
 }

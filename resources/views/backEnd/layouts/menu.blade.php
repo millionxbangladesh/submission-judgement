@@ -9,11 +9,12 @@
 
 </style>
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-    <div class="app-brand demo mt-3 mb-3">
-        <a href="" class="app-brand-link" target="_blank">
+    <div class="app-brand demo" style="margin-top:0">
+        <a href="" class="app-brand-link m-1" target="_blank">
             <div class="logo-container">
-            <img src="{{asset('assets/img/logo.png')}}" style="height: 80px">
+            <img src="{{asset("/assets/logo.png")}}" style="width: 100% ">
             </div>
+            {{--  <span class="app-brand-text demo menu-text fw-bolder ms-2">BASIS</span>  --}}
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
             <i class="bx bx-chevron-left bx-sm align-middle"></i>
@@ -21,10 +22,16 @@
     </div>
     <div class="menu-inner-shadow"></div>
     <ul class="menu-inner py-1">
-        <x-tools.menu-header title="Millionx Bangladesh"/>
         @if(Auth::user()->role ===1)
+            <!-- Dashboard -->
+            {{--  <li class="menu-item {{request()->routeIs('dashboard')?'active':''}}">
+                <a href="{{route('dashboard')}}" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                    Dashboard
+                </a>
+            </li>  --}}
             <!-- Applications -->
-            <li class="menu-item {{request()->routeIs('application.index')?'active':''}}">
+            <li class="menu-item {{request()->routeIs('dashboard','application.index')?'active':''}}">
                 <a href="{{route('application.index',['year'=>date('Y')])}}" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-list-ul"></i>
                     Applications
@@ -33,8 +40,8 @@
 
             <li class="menu-item {{request()->routeIs('room.index')?'active':''}}">
                 <a href="{{route('room.index')}}" class="menu-link">
-                    <i class="menu-icon tf-icons bx  bx-building-house"></i>
-                    Room
+                    <i class="menu-icon tf-icons bx bxs-location-plus"></i>
+                    Locations
                 </a>
             </li>
             <li class="menu-item {{request()->routeIs('result.index')?'active':''}}">
@@ -43,6 +50,7 @@
                     Results
                 </a>
             </li>
+
             <!--Menu Header-->
             <x-tools.menu-header title="Settings"/>
             <!-- Profile -->
@@ -82,8 +90,8 @@
             </li>
             <li class="menu-item {{request()->routeIs('room.index')?'active':''}}">
                 <a href="{{route('room.index')}}" class="menu-link">
-                    <i class="menu-icon tf-icons bx  bx-building-house"></i>
-                    Room
+                    <i class="menu-icon tf-icons bx bxs-location-plus"></i>
+                    Locations
                 </a>
             </li>
             <li class="menu-item {{request()->routeIs('users.index')?'active':''}}">

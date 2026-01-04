@@ -6,7 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+use App\Notifications\AdminResetPasswordNotification;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -23,6 +23,10 @@ class User extends Authenticatable
         'role',
         'role_name',
         'status',
+        'organization',
+        'designation',
+        'phone',
+        'termsAccepted',
     ];
 
     /**
@@ -62,5 +66,9 @@ class User extends Authenticatable
         return $this->belongsToMany(Registration::class, 'project_room_user')
             ->withPivot('room_id', 'mark')
             ->withTimestamps();
+    }
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new AdminResetPasswordNotification($token));
     }
 }

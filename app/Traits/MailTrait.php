@@ -9,9 +9,9 @@ trait MailTrait
 {
     protected function sendMail($to, $to_name, $body, $cusSub = false): JsonResponse
     {
-        $from = "bsf@basis.org.bd";
-        $from_name = "NASA Space Apps Challenge Bangladesh";
-        $subject = "Confirmation | Registration Successful Completed - NASA Space Apps Challenge Bangladesh 2025";
+        $from = "info@millionxbangladesh.org";
+        $from_name = "2025 MillionX Bangladesh";
+        $subject = "Confirmation | Registration Successful Completed - 2025 MillionX Bangladesh";
         $email = new \SendGrid\Mail\Mail();
         $email->setFrom("{$from}", "{$from_name}");
         $email->setSubject("{$subject}");
@@ -20,7 +20,7 @@ trait MailTrait
             "text/html",
             "<p>{$body}</p>"
         );
-          $sendgrid = new \SendGrid('');
+          $sendgrid = new \SendGrid('SendGrid_API_Key_Here');
         try {
             $response = $sendgrid->send($email);
             $resp = [
@@ -38,9 +38,9 @@ trait MailTrait
 
     protected function Contact_Mail(string $to_name, string $from, string $body, $cusSub = false): JsonResponse
     {
-        $to = "bsf@basis.org.bd";
+        $to = "info@millionxbangladesh.org";
         $from_name = "$to_name";
-        $subject = "Query from Nasa Space Apps Challenge Bangladesh website";
+        $subject = "Query from MillionX Bangladesh website";
         $email = new \SendGrid\Mail\Mail();
         $email->setFrom("{$from}", "{$from_name}");
         $email->setSubject("{$subject}");
@@ -49,7 +49,7 @@ trait MailTrait
             "text/html",
             "<p>$body</p>"
         );
-        $sendgrid = new \SendGrid('');
+        $sendgrid = new \SendGrid('SendGrid_API_Key_Here');
         try {
             $response = $sendgrid->send($email);
             return response()->json(true);

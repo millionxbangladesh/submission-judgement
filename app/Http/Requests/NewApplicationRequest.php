@@ -23,16 +23,19 @@ class NewApplicationRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'team_name' => 'required|max:25',
+            'team_name' => 'required|max:25|unique:registrations,team_name',
             'team_leader_name' => 'required|max:120',
             'team_leader_mobile' => 'required|digits:11',
-            'team_leader_email' => 'required|email',
+            'team_leader_email' => 'required|email|unique:registrations,team_leader_email',
             'location' => 'required',
-            'image' => 'nullable|mimes:png,jpeg,jpg|max:3400',
-            'team_members' => 'required|array',
-            'team_members.*.name' => 'required|max:150',
-            'team_members.*.email' => 'required|email',
-            'team_members.*.mobile' => 'required|digits:11',
+            'university_id' => 'required',
+            'team_type' => 'required',
+            'password' => 'required',
+            // 'image' => 'nullable|mimes:png,jpeg,jpg|max:3400',
+            'team_members' => 'exclude_unless:team_type,team|required|array',
+            'team_members.*.name' => 'exclude_unless:team_type,team|required|max:150',
+            'team_members.*.email' => 'exclude_unless:team_type,team|required|email',
+            'team_members.*.mobile' => 'exclude_unless:team_type,team|required|digits:11',
         ];
     }
 

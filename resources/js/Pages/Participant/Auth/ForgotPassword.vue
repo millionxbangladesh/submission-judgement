@@ -28,31 +28,27 @@ const submit = () => {
             class="d-flex justify-content-center align-items-center position-relative overflow-hidden login-form-container"
             style="padding-top: 4rem; height: 100vh;"
         >
-            <!-- Background planets (same as login page) -->
-            <img src="../../../assets/images/Saturnx.png" class="saturn-img" alt="" />
-            <img src="../../../assets/images/Jupiter.png" class="jupitar-img" alt="" />
-            <img src="../../../assets/images/world.png" class="world-img" alt="" />
 
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-5 mx-auto">
                         <form
                             @submit.prevent="submit"
-                            class="d-flex flex-column p-3 p-md-5 student-login-form"
+                            class="d-flex flex-column p-3 p-md-5 student-login-form shadow-xl"
                         >
-                            <h1 class="text-amber-500 text-center">Forgot Password</h1>
+                            <h1 class="text-center">Forgot Password</h1>
 
-                            <p class="text-white text-center mb-4 text-sm">
+                            <p class="text-center mb-4 text-sm">
                                 Forgot your password? No problem. Just let us know your email address and we will email you a password reset link.
                             </p>
 
                             <div class="student-id-label position-relative mb-2 mb-md-4">
-                                <InputLabel for="email" value="Email" class="text-white form-label ps-3 fs-5 mb-2" />
+                                <InputLabel for="email" value="Email" class="form-label ps-3 fs-5 mb-2" />
                                 <TextInput
                                     id="email"
                                     type="email"
                                     v-model="form.email"
-                                    class="form-control rounded-0"
+                                    class="form-control"
                                     placeholder="Please Write Your Email"
                                     required
                                     autofocus
@@ -83,14 +79,14 @@ const submit = () => {
 
 <style scoped>
 .login-form-container{
-    background-image: linear-gradient(to right, #131144, #090320);
+    /* background-image: linear-gradient(to right, #131144, #090320); */
 }
 .student-login-form{
-    background-color: rgba(255,255,255,0.075);
-    backdrop-filter: blur(8px);
-    position: relative;
-    z-index:2;
-    border: 2px solid var(--purple-500);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
 .jupitar-img{
     height: 10rem;
@@ -145,7 +141,7 @@ const submit = () => {
     top: 0;
     height: 40%;
     width: 0.25rem;
-    background-color: var(--purple-500);
+    background-color: var(--green-500);
 }
 input{
     box-shadow: 5px solid red;

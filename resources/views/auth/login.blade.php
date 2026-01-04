@@ -22,7 +22,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,7 +67,7 @@
                     <div class="app-brand justify-content-center">
                         <a href="/" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
-                   <img src="{{asset('assets/img/logo.png')}}" alt="" style="height: 80px">
+                   <img src="{{asset('/assets/logo.png')}}" alt="" style="height: 80px">
                   </span>
                         </a>
                     </div>
@@ -85,7 +85,7 @@
                         <div class="mb-3 form-password-toggle">
                             <div class="d-flex justify-content-between">
                                 <label class="form-label" for="password">Password</label>
-                                <a href="#">
+                                <a href="{{ route('admin.password.request') }}" target="_blank">
                                     <small>Forgot Password?</small>
                                 </a>
                             </div>
@@ -105,13 +105,12 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="remember-me" />
-                                <label class="form-check-label" for="remember-me"> Remember Me </label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
                             <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                        </div>
+                        <div class="text-center mt-3 ">
+                            <a href="{{ route('register.judge-mentor') }}" target="_blank" class="forgot-link text-dark">
+                                Not registered yet? <span class="ms-2 fw-bold"> Register As A Judge </span>
+                            </a>
                         </div>
                     </form>
                 </div>

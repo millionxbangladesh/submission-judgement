@@ -15,7 +15,7 @@ class VolunteerController extends Controller
     {
         $zones = DB::table('zones')->get();
         $userId = auth()->user()->id;
-        $projects = Registration::with(['zone:id,title'])->whereHas('rooms.volunteers', function ($query) use ($userId) {
+        $projects = Registration::with(['zone:id,title,code'])->whereHas('rooms.volunteers', function ($query) use ($userId) {
             $query->where('users.id', $userId);})->when($request->location, function ($query, $location) {
                 return $query->where('zone_id', $location);
             })->select('id','registration_no','team_name','zone_id')->paginate(15);
@@ -24,7 +24,7 @@ class VolunteerController extends Controller
 
     public function view(Request $request)
     {
-        $project =Registration::with(['zone:id,title'])->where('id', $request->id)->select('id','registration_no','team_name','project_name','description','video30s','video240s','project_link','zone_id','category_id')->first();
+        $project =Registration::with(['zone:id,title,code','appChallengeCategory','subChallengeCategory'])->where('id', $request->id)->select('id','category_id','sub_category_id','registration_no','team_name','project_name','description','videolink','file_link','project_link','zone_id')->first();
         return view($this->room . '.view', compact('project'));
     }
 }

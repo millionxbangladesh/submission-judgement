@@ -25,7 +25,8 @@ const handleLogin = async () => {
       error.value = response.data.message || "Invalid credentials.";
     }
   } catch (err) {
-    error.value = "Login failed. Please try again.";
+    // error.value = "Login failed. Please try again.";
+    error.value = err.response?.data?.message || "Login failed. Please try again.";
   } finally {
     loading.value = false;
   }
@@ -34,144 +35,223 @@ const handleLogin = async () => {
 
 <template>
   <Layout>
+    <Head title="Login"/>
     <section
-      class="d-flex justify-content-center align-items-center position-relative overflow-hidden login-form-container"
-      style="padding-top: 4rem; height: 100vh;"
-    >
-      <!-- <img src="../assets/images/Saturnx.png" class="saturn-img" alt="" />
-      <img src="../assets/images/Jupiter.png" class="jupitar-img" alt="" />
-      <img src="../assets/images/world.png" class="world-img" alt="" /> -->
+        class="login-form-container d-flex justify-content-center align-items-center position-relative"
+        >
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-5">
+                <form
+                @submit.prevent="handleLogin"
+                class="student-login-form p-4 p-md-5"
+                >
+                <h2 class="login-title text-center mb-2">
+                    Sign In
+                </h2>
+                <p class="login-subtitle text-center mb-4">
+                    Access your account securely
+                </p>
 
-      <div class="container ">
-        <div class="row">
-          <div class="col-12 col-md-5 mx-auto">
-            <form
-              @submit.prevent="handleLogin"
-              class="d-flex flex-column p-3 p-md-5 student-login-form bg-white"
-            >
-              <h1 class="text-amber-500 text-center mb-4">Login Form</h1>
+                <div class="form-group mb-4 student-id-label">
+                    <label class="form-label">Email Address</label>
+                    <input
+                    type="email"
+                    v-model="email"
+                    class="form-control custom-input"
+                    placeholder="you@example.com"
+                    required
+                    />
+                </div>
 
-              <div class="student-id-label position-relative mb-2 mb-md-4">
-                <label class="text-black form-label ps-3 fs-5 mb-2">Email</label>
-                <input
-                  type="email"
-                  v-model="email"
-                  class="form-control rounded-0"
-                  placeholder="Please Write Your Email"
-                  required
-                />
-              </div>
+                <div class="form-group mb-3 student-password-label">
+                    <label class="form-label">Password</label>
+                    <input
+                    type="password"
+                    v-model="password"
+                    class="form-control custom-input"
+                    placeholder="••••••••"
+                    required
+                    />
+                </div>
 
-              <div class="student-password-label position-relative mb-2 mb-md-4">
-                <label class="text-black form-label ps-3 fs-5 mb-2">Password</label>
-                <input
-                  type="password"
-                  v-model="password"
-                  class="form-control rounded-0"
-                  placeholder="Please Write Your Password"
-                  required
-                />
-              </div>
-                <!-- Forgot Password link -->
-                <!-- <div class="text-end mb-3">
-                    <a :href="route('participant.password.request')" class="text-amber-400 hover:underline">
-                        Forgot Password?
+                <div class="text-end mb-4">
+                    <a
+                    :href="route('participant.password.request')"
+                    class="forgot-link"
+                    >
+                    Forgot Password?
                     </a>
-                </div> -->
-              <button
-                type="submit"
-                class="btn-nasa-blue w-100 d-block mx-auto"
-                :disabled="loading"
-              >
-                <span v-if="loading">Logging in...</span>
-                <span v-else>Login</span>
-              </button>
+                </div>
 
-              <p v-if="error" class="text-danger text-center mt-3">{{ error }}</p>
-            </form>
-          </div>
+                <button
+                    type="submit"
+                    class="btn-login w-100"
+                    :disabled="loading"
+                >
+                    <span v-if="loading">Logging in...</span>
+                    <span v-else>Login</span>
+                </button>
+
+                <p v-if="error" class="text-danger text-center mt-3">
+                    {{ error }}
+                </p>
+
+                    <div class="text-center mt-3">
+                        <a
+                        :href="route('registration')"
+                        class="forgot-link"
+                        >
+                         Not registered yet? <span class="ms-2 fw-bold"> Register Here </span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            </div>
         </div>
-      </div>
     </section>
+
   </Layout>
 </template>
 <style scoped>
-.login-form-container{
-    background-image: linear-gradient(to right, #dbdbe091, #e7e6eb1e);
-}
-.student-login-form{
-    background-color: rgba(255,255,255,0.075);
-    backdrop-filter: blur(8px);
-    position: relative;
-    z-index:2;
-    border: 2px solid var(--purple-500);
-}
-.jupitar-img{
-    height: 10rem;
-    position: absolute;
-    right: -10%;
-    top: 0%;
-    opacity: 25%;
-}
-@media screen and (min-width:1200px){
-    .jupitar-img{
-    height: 30rem;
-    position: absolute;
-    right: -10%;
-    top: -10%;
-    opacity: 25%;
-    }
+/* Background */
+.login-form-container {
+  min-height: 100vh;
+  /* background: linear-gradient(
+    135deg,
+    #0f172a,
+    #020617,
+    #020617
+  ); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.world-img{
-    height: 5rem;
-    width: 5rem;
-    top:25%;
-    left: 10%;
-    position: absolute;
+/* Animated glow background */
+.login-form-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(99, 102, 241, 0.15),
+    transparent 40%
+  ),
+  radial-gradient(
+    circle at 80% 80%,
+    rgba(251, 191, 36, 0.12),
+    transparent 40%
+  );
+  z-index: 0;
 }
-@media screen and (min-width:1200px){
-    .world-img{
-    height: 5rem;
-    width: 5rem;
-    top:20%;
-    left: 30%;
-    position: absolute;
-    }
+
+/* Glass Card */
+.student-login-form {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
-.saturn-img{
-    height: 5rem;
-    top:77%;
-    left: 62%;
-    position: absolute;
+
+/* Title */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color:black;
 }
-@media screen and (min-width:1200px){
-    .saturn-img{
-    height: 8rem;
-    top:70%;
-    left: 62%;
-    position: absolute;
-    }
+
+.login-subtitle {
+  font-size: 0.9rem;
+  color: #9ca3af;
 }
-.student-id-label::before{
-    content: "";
-    position:absolute;
-    left: 0;
-    top: 0;
-    height: 40%;
-    width: 0.25rem;
-    background-color: var(--purple-500);
+
+/* Labels */
+.form-label {
+  color: black;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
 }
-.student-password-label::before{
-    content: "";
-    position:absolute;
-    left: 0;
-    top: 0;
-    height: 40%;
-    width: 0.25rem;
-    background-color: var(--amber-500);
+
+/* Inputs */
+.custom-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid black;
+  color: #000000;
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+  transition: all 0.25s ease;
 }
-input{
-    box-shadow: 5px solid red;
+
+.custom-input::placeholder {
+  color: #94a3b8;
 }
+
+.custom-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.25);
+}
+
+/* Accent bars */
+.student-id-label,
+.student-password-label {
+  position: relative;
+}
+
+.student-id-label::before,
+.student-password-label::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  border-radius: 3px;
+}
+
+.student-id-label::before {
+  background: var(--green-500);
+}
+
+.student-password-label::before {
+  background: var(--green-500);
+}
+
+/* Forgot link */
+.forgot-link {
+  font-size: 0.85rem;
+  color: black;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn-login {
+  background: #4f46e5;
+  border: none;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #453eca;
+}
+
+.btn-login:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 </style>
